@@ -1,0 +1,33 @@
+/* Header.css */
+.header {
+    /* The header stays at the top and spans full width */
+    width: 100%;
+    background-color: var(--color-background);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    /* Center the header content and match main content width */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    /* Layout for nav items */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .header-content {
+        width: 85%;
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header-content {
+        width: 80%;
+    }
+}

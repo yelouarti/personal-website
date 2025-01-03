@@ -1,0 +1,58 @@
+:root {
+  --color-text: hsl(0, 0%, 12%);  /* Off-black - dark but softer than pure black */
+  --color-background: hsl(0, 0%, 100%);
+
+  /* Breakpoints */
+  --mobile: 320px;
+  --tablet: 768px;
+  --desktop: 1024px;
+  --large-desktop: 1440px;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+
+  /* Improved text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  line-height: 1.5;
+}
+
+html {
+  /* Start with 14px on mobile devices while our base font is 16px */
+  font-size: 87.5%;  /* 14px/16px = 87.5% */
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 100%;  /* 16px */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 112.5%;  /* 18px */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 125%;  /* 20px */
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 1.5em 0 0.5em;
+}
+
+h1 { font-size: 2.5rem; }    /* 40px if base is 16px */
+h2 { font-size: 2rem; }      /* 32px */
+h3 { font-size: 1.75rem; }   /* 28px */
+h4 { font-size: 1.5rem; }    /* 24px */
+h5 { font-size: 1.25rem; }   /* 20px */
+h6 { font-size: 1rem; }      /* 16px */
