@@ -1,0 +1,30 @@
+
+.app {
+  /* This ensures the footer stays at the bottom even with little content */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  /* This allows the main content to expand and push footer down */
+  flex: 1;
+  /* Add some breathing room on the sides */
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    width: 85%;
+    padding: 3rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content {
+    width: 80%;
+  }
+}
