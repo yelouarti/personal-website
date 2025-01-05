@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
-import './style.css';               // Your custom CSS
+import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // If you didn't include via CDN
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from './assets/logo.svg';
 import globe from './assets/globe.svg';
 import {LanguageContext} from "./LanguageContext";
@@ -47,8 +47,6 @@ const Header = () => {
                     aria-labelledby="mainNavbarLabel"
                 >
                     <div className="offcanvas-header">
-                        {/*<h5 className="offcanvas-title" id="mainNavbarLabel">Menu</h5>*/}
-
                         <button
                             type="button"
                             className="btn-close text-reset"
@@ -84,7 +82,6 @@ const Header = () => {
                         <div
                             className="language-switch d-flex align-items-center"
                             onClick={toggleLanguage}
-                            style={{cursor: 'pointer'}}
                             role="button"
                             aria-label={`Switch language to ${
                                 currentLanguage === 'de' ? 'English' : 'German'
@@ -113,7 +110,7 @@ const Header = () => {
                                      DE
                                  </span>
                             </div>
-                            {' '} | {' '}
+                            {' '} · {' '}
                             <div
                                 className={
                                     currentLanguage === 'en' ? 'active-language' : 'inactive-language'

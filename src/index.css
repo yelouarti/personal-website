@@ -1,6 +1,6 @@
 :root {
   --color-text: #333333;
-  --color-background: #0;
+  --color-background: #FFF;
   --color-highlight: #1E3A8A;
   --color-muted: #6B7280;
 }
@@ -16,8 +16,8 @@ body {
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--color-background);
   color: var(--color-text);
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
 }
 
