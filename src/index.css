@@ -3,15 +3,6 @@
   --color-background: #0;
   --color-highlight: #1E3A8A;
   --color-muted: #6B7280;
-  /* Breakpoints */
-  --mobile: 320px;
-  --tablet: 768px;
-  --desktop: 1024px;
-  --large-desktop: 1440px;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
 }
 
 html, body {
@@ -25,8 +16,8 @@ body {
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--color-background);
   color: var(--color-text);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-moz-osx-font-smoothing: grayscale;*/
   line-height: 1.5;
 }
 
@@ -41,7 +32,7 @@ html {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   html {
     font-size: 112.5%; /* 18px */
   }
