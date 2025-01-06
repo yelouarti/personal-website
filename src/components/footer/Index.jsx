@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './style.css';
@@ -8,11 +8,21 @@ import githubIcon from '../../assets/images/icons/github.svg';
 import stackoverflowIcon from '../../assets/images/icons/stackoverflow.svg';
 import mediumIcon from '../../assets/images/icons/medium.svg';
 import globeIcon from '../../assets/images/icons/globe.svg';
+import {LanguageContext} from "../header/LanguageContext";
 
 const Footer = () => {
+
+    const {language: currentLanguage, switchLanguage} = useContext(LanguageContext);
+
+    // Toggle function to switch between 'de' and 'en'
+    const toggleLanguage = () => {
+        const newLanguage = currentLanguage === 'de' ? 'en' : 'de';
+        switchLanguage(newLanguage);
+    };
+
     return (
-        <footer className="mt-auto">
-            <div className="container-fluid footer-wrapper">
+        <footer className="mt-auto footer-wrapper">
+            <div className="container-fluid main-container">
                 {/* Row for social icons */}
                 <div className="row justify-content-md-start justify-content-center">
                     <div className="col-auto">
@@ -57,7 +67,19 @@ const Footer = () => {
 
                 {/* Language switch */}
                 <div className="row mt-2">
-                    <div className="d-flex footer-language-switch">
+                    <div className="d-flex footer-language-switch"
+                         onClick={toggleLanguage}
+                         role="button"
+                         aria-label={`Switch language to ${
+                             currentLanguage === 'de' ? 'English' : 'German'
+                         }`}
+                         tabIndex={0}
+                         onKeyUp={(e) => {
+                             if (e.key === 'Enter' || e.key === ' ') {
+                                 toggleLanguage();
+                             }
+                         }}
+                    >
                         <img
                             src={globeIcon}
                             alt="Language switch"

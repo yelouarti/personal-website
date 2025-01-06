@@ -1,19 +1,22 @@
 .footer-wrapper {
     background-color: var(--color-muted-background);
     border-top: solid 1px var(--color-muted-element);
+}
 
+.footer-wrapper * {
+    font-size: 11px;
 }
 
 .footer-title {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
 .footer-text {
-    font-size: 10px;
+    font-size: 11px;
     text-align: justify;
-    line-height: 1.7;
+    line-height: 2;
 }
 
 .footer-column {
@@ -21,7 +24,6 @@
 }
 
 .footer-copyright {
-    font-size: 9px;
     color: var(--color-muted-element);
 }
 
@@ -34,7 +36,6 @@
 }
 
 .footer-language-switch {
-    font-size: 9px;
     gap: 7px;
     align-items: center;
     margin-bottom: 25px;
@@ -42,7 +43,6 @@
 
 .social-icons img {
     min-height: 20px;
-    /*padding-right: 40px;*/
     transition: opacity 0.3s ease;
 }
 .social-icons {

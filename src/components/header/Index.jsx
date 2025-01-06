@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         <nav className="navbar navbar-expand-lg">
-            <div className="container-fluid">
+            <div className="container-fluid main-container">
                 <a className="navbar-brand" href="/">
                     <img
                         className="logo"
@@ -80,7 +80,7 @@ const Header = () => {
 
                         {/* Language Switch */}
                         <div
-                            className="language-switch d-flex align-items-center"
+                            className="header-language-switch d-flex align-items-center"
                             onClick={toggleLanguage}
                             role="button"
                             aria-label={`Switch language to ${
