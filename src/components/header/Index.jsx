@@ -3,7 +3,7 @@ import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from './assets/logo.svg';
-import globe from './assets/globe.svg';
+import globe from '../../assets/images/icons/globe.svg';
 import {LanguageContext} from "./LanguageContext";
 
 const Header = () => {

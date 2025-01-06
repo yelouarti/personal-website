@@ -2,7 +2,8 @@
   --color-text: #333333;
   --color-background: #FFF;
   --color-highlight: #1E3A8A;
-  --color-muted: #6B7280;
+  --color-muted-element: #6B7280;
+  --color-muted-background: #F3F3F3;
 }
 
 html, body {

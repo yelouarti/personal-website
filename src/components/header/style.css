@@ -3,11 +3,6 @@
     min-height: 6.25rem;
 }
 
-/*.navbar *:focus {*/
-/*    outline: 2px solid var(--color-highlight);*/
-/*    outline-offset: 2px;*/
-/*}*/
-
 /* logo */
 .logo {
     max-height: 2.5rem;
@@ -49,7 +44,7 @@
     width: 2px;
     align-self: stretch;
     margin: 0 1rem;
-    background-color: var(--color-muted);
+    background-color: var(--color-muted-element);
 }
 
 .language-switch {
@@ -59,7 +54,7 @@
     gap: 0.1rem;
     white-space: nowrap;
     flex-shrink: 0;
-    color: var(--color-muted);
+    color: var(--color-muted-element);
 }
 
 .language-switch img {
@@ -88,7 +83,7 @@
  }
 
 .inactive-language {
-    color: var(--color-muted);
+    color: var(--color-muted-element);
 }
 
 /* Menu for small displays*/
@@ -135,7 +130,7 @@
         height: 1px;
         align-self: center;
         margin: 1rem 0;
-        background-color: var(--color-muted);
+        background-color: var(--color-muted-element);
     }
 
     .language-switch {

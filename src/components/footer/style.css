@@ -1,33 +1,60 @@
-/* Header.css */
-.header {
-    /* The header stays at the top and spans full width */
-    width: 100%;
-    background-color: var(--color-background);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.footer-wrapper {
+    background-color: var(--color-muted-background);
+    border-top: solid 1px var(--color-muted-element);
+
 }
 
-.header-content {
-    /* Center the header content and match main content width */
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
+.footer-title {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
 
-    /* Layout for nav items */
-    display: flex;
-    justify-content: space-between;
+.footer-text {
+    font-size: 10px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.footer-column {
+    max-width: 515px;
+}
+
+.footer-copyright {
+    font-size: 9px;
+    color: var(--color-muted-element);
+}
+
+.footer-language-switch img {
+    max-width: 12px;
+}
+
+.footer-language-switch p {
+    margin: 0;
+}
+
+.footer-language-switch {
+    font-size: 9px;
+    gap: 7px;
     align-items: center;
+    margin-bottom: 25px;
 }
 
-@media screen and (min-width: 768px) {
-    .header-content {
-        width: 85%;
-        padding: 1.5rem 2rem;
-    }
+.social-icons img {
+    min-height: 20px;
+    /*padding-right: 40px;*/
+    transition: opacity 0.3s ease;
+}
+.social-icons {
+    padding: 40px 0;
+    gap: 40px
 }
 
-@media screen and (min-width: 1024px) {
-    .header-content {
-        width: 80%;
-    }
+.footer-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
