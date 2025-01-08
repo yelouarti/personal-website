@@ -8,6 +8,7 @@ import githubIcon from '../../assets/images/icons/github.svg';
 import stackoverflowIcon from '../../assets/images/icons/stackoverflow.svg';
 import mediumIcon from '../../assets/images/icons/medium.svg';
 import globeIcon from '../../assets/images/icons/globe.svg';
+import arrowUpIcon from './assets/arrowup.svg';
 import {LanguageContext} from "../header/LanguageContext";
 
 const Footer = () => {
@@ -20,8 +21,28 @@ const Footer = () => {
         switchLanguage(newLanguage);
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     return (
-        <footer className="mt-auto footer-wrapper">
+        <footer className="mt-auto">
+            {/* Row for social icons */}
+            <div className="row justify-content-center">
+                <div className="back-to-top-btn col-auto d-flex flex-column align-items-center justify-content-center my-5">
+                    <button
+                        onClick={scrollToTop}
+                        className="my-3"
+                    >
+                        <img src={arrowUpIcon} alt="Back to top"/>
+                    </button>
+                    <span>Nach oben</span>
+                </div>
+            </div>
+            <div className="footer-wrapper">
             <div className="container-fluid main-container">
                 {/* Row for social icons */}
                 <div className="row justify-content-md-start justify-content-center">
@@ -44,7 +65,7 @@ const Footer = () => {
                 </div>
 
                 {/* Row for Über Mich and Kontakt */}
-                <div className="row justify-content-between">
+                <div className="d-flex flex-column flex-md-row justify-content-between gap-md-5">
                     <div className="col mb-3 footer-column">
                         <p className="footer-title">Über Mich</p>
                         <p className="footer-text">
@@ -66,8 +87,8 @@ const Footer = () => {
                 </div>
 
                 {/* Language switch */}
-                <div className="row mt-2">
-                    <div className="d-flex footer-language-switch"
+                <div className="row">
+                    <div className="d-flex footer-language-switch mt-5 mt-md-0 justify-content-center justify-content-md-start"
                          onClick={toggleLanguage}
                          role="button"
                          aria-label={`Switch language to ${
@@ -90,14 +111,24 @@ const Footer = () => {
 
                 {/* Row for copyright and links */}
                 <div className="row mt-2">
-                    <div className="col text-left">
-                        <p className="footer-copyright">
-                            © 2025 Younes El Ouarti – Alle Rechte Vorbehalten &nbsp;|&nbsp;&nbsp;
-                            <a href="/datenschutz" className="footer-link">Datenschutz</a> &nbsp;|&nbsp;
-                            <a href="/impressum" className="footer-link">Impressum</a>
-                        </p>
+                    <div className="col d-flex justify-content-center justify-content-md-start">
+                        <div className="footer-copyright d-flex flex-column-reverse flex-md-row">
+                            <span className="mb-4">
+                                © {new Date().getFullYear()} Younes El Ouarti – Alle Rechte Vorbehalten
+                            </span>
+                            <span id="copyright-datenschutz-separator" className={ currentLanguage === "de" ?
+                                "d-none d-md-flex px-2" : "d-none"}>
+                                |
+                            </span>
+                            <div className= {currentLanguage === "de"? "mb-4 footer-link text-center text-md-start" : "d-none" }>
+                                <a href="/datenschutz">Datenschutz</a>
+                                <span className="px-2">|</span>
+                                <a href="/impressum">Impressum</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
             </div>
         </footer>
     );
