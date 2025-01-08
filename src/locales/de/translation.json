@@ -1,0 +1,31 @@
+{
+  "header": {
+    "expertise": "Expertise",
+    "services": "Leistungen",
+    "projects": "Projekte",
+    "contact": "Kontakt",
+    "languageSwitchAlt": "Sprachwechsel",
+    "switchLanguageTo": "Sprache wechseln zu Englisch",
+    "Deutsch": "Deutsch",
+    "English": "Englisch",
+    "DE": "DE",
+    "EN": "EN"
+  },
+  "footer": {
+    "backToTop": "Nach oben",
+    "arrowUpAlt": "Nach oben",
+    "aboutMeTitle": "Über Mich",
+    "aboutMeText1": "Ich bin ein Full Stack Developer und IT-Solution Architect mit über 10 Jahren Erfahrung in Java-Backend-Entwicklung und Microservice-Architekturen. Mein Fokus: skalierbare Cloud-Lösungen, sauberer Code und nachhaltiges Engineering. Mit meiner Architekturerfahrung und kommunikativen Stärke bringe ich komplexe Anforderungen effizient auf den Punkt – von der Konzeption bis zur Umsetzung.",
+    "contactTitle": "Kontakt",
+    "emailLabel": "E-Mail",
+    "responseTimeLabel": "Bearbeitungsdauer",
+    "responseTime": "E-Mails werden innerhalb von 1-2 Werktagen beantwortet.",
+    "contactPhone": "Für telefonische Kontaktaufnahme bitte ich um vorherige Absprache per E-Mail.",
+    "languageSwitchLabel": "Deutsch (Deutschland)",
+    "globeAlt": "Sprachwechsel",
+    "datenschutz": "Datenschutz",
+    "impressum": "Impressum",
+    "copyright":
+    "© {{year}} Younes El Ouarti – Alle Rechte Vorbehalten"
+  }
+}
