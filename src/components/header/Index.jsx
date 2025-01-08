@@ -5,8 +5,10 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from './assets/logo.svg';
 import globe from '../../assets/images/icons/globe.svg';
 import {LanguageContext} from "./LanguageContext";
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+    const { t } = useTranslation();
     const {language: currentLanguage, switchLanguage} = useContext(LanguageContext);
 
     // Toggle function to switch between 'de' and 'en'
@@ -58,21 +60,29 @@ const Header = () => {
                         id="logo-side-menu"
                         className="logo"
                         src={logo}
-                        alt="Younes El Ouarti - Fullstack Developer • IT-Solution Architect"
+                        alt={t('header.logoAlt')}
                     />
                     <div className="offcanvas-body">
                         <ul className="navbar-nav nav-list ms-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="#expertise">Expertise</a>
+                                <a className="nav-link" href="#expertise">
+                                    {t('header.expertise')}
+                                </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#leistungen">Leistungen</a>
+                                <a className="nav-link" href="#leistungen">
+                                    {t('header.services')}
+                                </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#projekte">Projekte</a>
+                                <a className="nav-link" href="#projekte">
+                                    {t('header.projects')}
+                                </a>
                             </li>
                             <li className="nav-item">
-                                <button className="contact-btn">Kontakt</button>
+                                <button className="contact-btn">
+                                    {t('header.contact')}
+                                </button>
                             </li>
                         </ul>
 
@@ -83,9 +93,9 @@ const Header = () => {
                             className="header-language-switch d-flex align-items-center"
                             onClick={toggleLanguage}
                             role="button"
-                            aria-label={`Switch language to ${
-                                currentLanguage === 'de' ? 'English' : 'German'
-                            }`}
+                            aria-label={t('header.switchLanguageTo', {
+                                language: currentLanguage === 'de' ? t('header.English') : t('header.Deutsch')
+                            })}
                             tabIndex={0}
                             onKeyUp={(e) => {
                                 if (e.key === 'Enter' || e.key === ' ') {
@@ -96,19 +106,19 @@ const Header = () => {
                             <img
                                 className="globe-icon me-2"
                                 src={globe}
-                                alt="Language switch"
+                                alt={t('header.languageSwitchAlt')}
                             />
                             <div
                                 className={
                                     currentLanguage === 'de' ? 'active-language' : 'inactive-language'
                                 }
                             >
-                                 <span className="full-language-name">
-                                     Deutsch
-                                 </span>
+                                <span className="full-language-name">
+                                    {t('header.Deutsch')}
+                                </span>
                                 <span className="abbreviated-language-name">
-                                     DE
-                                 </span>
+                                    {t('header.DE')}
+                                </span>
                             </div>
                             {' '} · {' '}
                             <div
@@ -117,10 +127,10 @@ const Header = () => {
                                 }
                             >
                                 <span className="full-language-name">
-                                English
+                                    {t('header.English')}
                                 </span>
                                 <span className="abbreviated-language-name">
-                                EN
+                                    {t('header.EN')}
                                 </span>
                             </div>
                         </div>
