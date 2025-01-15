@@ -32,7 +32,7 @@ const Footer = () => {
 
     return (
         <footer className="mt-auto">
-            {/* Row for social icons */}
+            {/*back to top button*/}
             <div className="row justify-content-center">
                 <div className="back-to-top-btn col-auto d-flex flex-column align-items-center justify-content-center my-5">
                     <button

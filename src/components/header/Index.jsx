@@ -24,7 +24,7 @@ const Header = () => {
                     <img
                         className="logo"
                         src={logo}
-                        alt="Younes El Ouarti - Fullstack Developer • IT-Solution Architect"
+                        alt="Younes El Ouarti - Full Stack Developer • IT-Solution Architect"
                     />
                 </a>
 
@@ -56,12 +56,6 @@ const Header = () => {
                             aria-label="Close"
                         ></button>
                     </div>
-                    <img
-                        id="logo-side-menu"
-                        className="logo"
-                        src={logo}
-                        alt={t('header.logoAlt')}
-                    />
                     <div className="offcanvas-body">
                         <ul className="navbar-nav nav-list ms-auto">
                             <li className="nav-item">

@@ -1,0 +1,122 @@
+.hero-container {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: #F2F2F2;
+    margin-bottom: 250px;
+}
+
+#hero-background * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-content {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+
+.hero-content div {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content img {
+    margin-top: 75px;
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+}
+
+#hc-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1rem 0 0 0;
+}
+
+#hc-role {
+    font-size: 13px;
+    margin: 0.3em 0 0 0;
+}
+
+#hc-location {
+    font-size: 12px;
+    margin: 0.3rem 0 0 0;
+}
+
+/*811px-1300px Tablet*/
+@media (min-width: 811px) {
+    .hero-content > div {
+        height: 100%;
+    }
+
+    .hero-container {
+        height: 240px;
+    }
+
+    .hero-content div {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Add this to align the text column to the left */
+    .hero-content .col.d-flex {
+        align-items: flex-start;  /* This aligns the text to the left */
+        /*margin-left: 2rem;*/
+        justify-content: center;
+    }
+
+    #hero-background * {
+        object-fit: none;
+        object-position: right;
+    }
+
+    .hero-content img {
+        margin-top: 0;
+    }
+
+    #hc-name {
+        margin: 0;
+    }
+}
+
+/*1301px-1920px FHD*/
+@media (min-width: 1301px) {
+    .hero-content img {
+        width: 277px;
+        height: 277px;
+    }
+
+    .hero-container {
+        height: 475px;
+    }
+
+    #hc-name {
+        font-size: 24px;
+    }
+
+    #hc-role {
+        font-size: 18px;
+        margin: 0.5em 0 0 0;
+    }
+
+    #hc-location {
+        font-size: 15px;
+        margin: 0.5rem 0 0 0;
+    }
+
+}
+
+/*1921px-3840px 2k/4k and beyond*/
+@media (min-width: 1921px) {
+    .hero-container {
+        height: 620px;
+    }
+}
