@@ -6,6 +6,7 @@ import imageFhd from './assets/hero-bg-fhd.webp';
 import imageTablet from './assets/hero-bg-tablet.webp';
 import imageMobile from './assets/hero-bg-mobile.jpg';
 import profileImage from './assets/profile.webp';
+import SocialIcons from "../social-icons";
 
 const Hero = () => (
     <div className="hero-container">
@@ -21,7 +22,7 @@ const Hero = () => (
             <div className="row d-flex">
                 {/*profile image*/}
                 <div className="col-auto">
-                    <img src={profileImage} alt="That's me!" className="profile-image"/>
+                    <img id="profile-image" src={profileImage} alt="That's me!" className="profile-image"/>
                 </div>
 
                 {/*info*/}
@@ -29,6 +30,7 @@ const Hero = () => (
                     <p id="hc-name">Younes El Ouarti</p>
                     <p id="hc-role">Full Stack Developer · IT-Solution Architect</p>
                     <p id="hc-location">Frankfurt am Main, Deutschland</p>
+                    <SocialIcons classNamePostfix="hero flex-row"/>
                 </div>
             </div>
         </div>

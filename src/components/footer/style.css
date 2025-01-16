@@ -27,12 +27,12 @@
 }
 
 /* Social icons */
-.social-icons img {
-    min-height: 20px;
+.social-icons--footer img {
+    height: 20px;
     transition: opacity 1s ease;
 }
 
-.social-icons {
+.social-icons--footer {
     padding: 60px 0;
     gap: 40px
 }
@@ -78,7 +78,7 @@
 
 @media (max-width: 576px) {
 
-    .social-icons {
+    .social-icons--footer {
         padding: 60px 0;
         gap: 50px
     }
