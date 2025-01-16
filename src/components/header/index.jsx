@@ -6,6 +6,7 @@ import logo from './assets/logo.svg';
 import globe from '../../assets/images/icons/globe.svg';
 import {LanguageContext} from "./LanguageContext";
 import { useTranslation } from 'react-i18next';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const { t } = useTranslation();
@@ -59,24 +60,26 @@ const Header = () => {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav nav-list ms-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="#expertise">
+                                <Link className="nav-link" to="/expertise">
                                     {t('header.expertise')}
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#leistungen">
+                                <Link className="nav-link" to="/services">
                                     {t('header.services')}
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#projekte">
+                                <Link className="nav-link" to="/projects">
                                     {t('header.projects')}
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <button className="contact-btn">
-                                    {t('header.contact')}
-                                </button>
+                                <Link to="/contact">
+                                    <button className="contact-btn">
+                                        {t('header.contact')}
+                                    </button>
+                                </Link>
                             </li>
                         </ul>
 
