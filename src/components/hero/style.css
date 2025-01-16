@@ -1,0 +1,145 @@
+.hero-container {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: #F2F2F2;
+    /* Push the container down, so the "business card" has space as it doesn't automatically push the
+     content down because it is on a different place on the z-axis */
+    margin-bottom: 250px;
+}
+
+/* Background */
+#hero-background * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Hero Content */
+.hero-content {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content div {
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-image {
+    margin-top: 75px;
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+}
+
+#hc-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px 0 0 0;
+}
+
+#hc-role {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+#hc-location {
+    font-size: 13px;
+    margin: 5px 0 0 0;
+}
+
+.social-icons--hero img {
+    height: 15px;
+    gap: 50px;
+}
+
+.social-icons--hero {
+    margin-top: 16px;
+    gap: 50px;
+}
+
+/*811px-1300px Tablet*/
+@media (min-width: 811px) {
+    .hero-container {
+        height: 240px;
+        /* "business card" is now within the container, no need to push the margin down*/
+        margin-bottom: 0;
+    }
+
+    .hero-content > div {
+        height: 100%;
+    }
+
+    .hero-content div {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Workaround to align the text column to the left */
+    .hero-content .col.d-flex {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .social-icons--hero {
+        margin-top: 5px;
+        gap: 25px;
+    }
+
+    #hero-background * {
+        object-fit: none;
+        object-position: right;
+    }
+
+    #profile-image {
+        margin-top: 0;
+    }
+
+    #hc-name {
+        margin: 0;
+    }
+}
+
+/*1301px-1920px FHD*/
+@media (min-width: 1301px) {
+    #profile-image {
+        width: 277px;
+        height: 277px;
+    }
+
+    .hero-container {
+        height: 475px;
+    }
+
+    #hc-name {
+        font-size: 24px;
+    }
+
+    #hc-role {
+        font-size: 18px;
+        margin-top: 9px;
+    }
+
+    #hc-location {
+        font-size: 17px;
+        margin-top: 9px;
+    }
+
+    .social-icons--hero {
+        margin-top: 9px;
+    }
+
+}
+
+/*1921px-3840px 2k/4k and beyond*/
+@media (min-width: 1921px) {
+    .hero-container {
+        height: 620px;
+    }
+}

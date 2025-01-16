@@ -3,14 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './style.css';
 
-import linkedinIcon from '../../assets/images/icons/linkedin.svg';
-import githubIcon from '../../assets/images/icons/github.svg';
-import stackoverflowIcon from '../../assets/images/icons/stackoverflow.svg';
-import mediumIcon from '../../assets/images/icons/medium.svg';
 import globeIcon from '../../assets/images/icons/globe.svg';
 import arrowUpIcon from './assets/arrowup.svg';
 import {LanguageContext} from "../header/LanguageContext";
 import { useTranslation } from 'react-i18next';
+import SocialIcons from "../social-icons";
 
 const Footer = () => {
 
@@ -32,7 +29,7 @@ const Footer = () => {
 
     return (
         <footer className="mt-auto">
-            {/* Row for social icons */}
+            {/*back to top button*/}
             <div className="row justify-content-center">
                 <div className="back-to-top-btn col-auto d-flex flex-column align-items-center justify-content-center my-5">
                     <button
@@ -49,20 +46,7 @@ const Footer = () => {
                     {/* Row for social icons */}
                     <div className="row justify-content-md-start justify-content-center">
                         <div className="col-auto">
-                            <div className="social-icons d-flex">
-                                <a href="https://www.linkedin.com/in/younes-el-ouarti/" target="_blank" rel="noreferrer">
-                                    <img src={linkedinIcon} alt="LinkedIn"/>
-                                </a>
-                                <a href="https://github.com/yelouarti" target="_blank" rel="noreferrer">
-                                    <img src={githubIcon} alt="GitHub"/>
-                                </a>
-                                <a href="https://stackoverflow.com/users/3705861/younes-el-ouarti" target="_blank" rel="noreferrer">
-                                    <img src={stackoverflowIcon} alt="Stack Overflow"/>
-                                </a>
-                                <a href="https://medium.com/@kamillionlabs" target="_blank" rel="noreferrer">
-                                    <img src={mediumIcon} alt="Medium"/>
-                                </a>
-                            </div>
+                            <SocialIcons classNamePostfix="footer" />
                         </div>
                     </div>
 

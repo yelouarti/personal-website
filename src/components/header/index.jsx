@@ -6,6 +6,7 @@ import logo from './assets/logo.svg';
 import globe from '../../assets/images/icons/globe.svg';
 import {LanguageContext} from "./LanguageContext";
 import { useTranslation } from 'react-i18next';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const { t } = useTranslation();
@@ -24,7 +25,7 @@ const Header = () => {
                     <img
                         className="logo"
                         src={logo}
-                        alt="Younes El Ouarti - Fullstack Developer • IT-Solution Architect"
+                        alt="Younes El Ouarti - Full Stack Developer • IT-Solution Architect"
                     />
                 </a>
 
@@ -56,33 +57,29 @@ const Header = () => {
                             aria-label="Close"
                         ></button>
                     </div>
-                    <img
-                        id="logo-side-menu"
-                        className="logo"
-                        src={logo}
-                        alt={t('header.logoAlt')}
-                    />
                     <div className="offcanvas-body">
                         <ul className="navbar-nav nav-list ms-auto">
                             <li className="nav-item">
-                                <a className="nav-link" href="#expertise">
+                                <Link className="nav-link" to="/expertise">
                                     {t('header.expertise')}
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#leistungen">
+                                <Link className="nav-link" to="/services">
                                     {t('header.services')}
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#projekte">
+                                <Link className="nav-link" to="/projects">
                                     {t('header.projects')}
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <button className="contact-btn">
-                                    {t('header.contact')}
-                                </button>
+                                <Link to="/contact">
+                                    <button className="contact-btn">
+                                        {t('header.contact')}
+                                    </button>
+                                </Link>
                             </li>
                         </ul>
 
