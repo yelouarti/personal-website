@@ -34,7 +34,7 @@ const Footer = () => {
                 <div className="back-to-top-btn col-auto d-flex flex-column align-items-center justify-content-center my-5">
                     <button
                         onClick={scrollToTop}
-                        className="my-3"
+                        className="mb-3 mt-5"
                     >
                         <img src={arrowUpIcon} alt={t('footer.arrowUpAlt')}/>
                     </button>

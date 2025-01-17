@@ -11,10 +11,6 @@
     width: 20px;
 }
 
-.back-to-top-btn span{
-    font-size: 15px;
-}
-
 /* Footer overall */
 .footer-wrapper {
     background-color: var(--color-muted-background);
@@ -45,7 +41,6 @@
 
 .footer-text {
     font-size: 12px;
-    text-align: justify;
     line-height: 1.7;
 }
 
