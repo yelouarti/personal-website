@@ -67,6 +67,16 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
+
+                <div className="home-major-component">
+                    <h2>Neugierig geworden?</h2>
+                    <p className="p-0 m-0">Ob Beratung, neue Projekte oder einfach nur ein Kennenlernen – kontaktieren Sie mich, und wir finden gemeinsam heraus, wie ich Ihnen weiterhelfen kann.</p>
+                    <div className="d-flex py-4 gap-3">
+                        <button className="std-btn">Kontakt aufnehmen</button>
+                        <button className="muted-btn">Weiter zur Expertise</button>
+                    </div>
+                </div>
             </div>
         </div>
     );
