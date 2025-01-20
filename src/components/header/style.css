@@ -1,6 +1,21 @@
 /* Whole navigation bar*/
 .navbar {
-    /*min-height: rem;*/
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    max-height: var(--header-height);
+}
+
+.nav-visible {
+    transform: translateY(0);
+}
+
+.nav-hidden {
+    transform: translateY(-100%);
 }
 
 /* logo */

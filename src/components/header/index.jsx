@@ -5,12 +5,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from './assets/logo.svg';
 import globe from '../../assets/images/icons/globe.svg';
 import {LanguageContext} from "./LanguageContext";
+import {useScrollDirection} from "./useScrollDirection"
 import { useTranslation } from 'react-i18next';
 import {Link} from "react-router-dom";
 
 const Header = () => {
     const { t } = useTranslation();
     const {language: currentLanguage, switchLanguage} = useContext(LanguageContext);
+    const isVisible = useScrollDirection();
 
     // Toggle function to switch between 'de' and 'en'
     const toggleLanguage = () => {
@@ -19,7 +21,7 @@ const Header = () => {
     };
 
     return (
-        <nav className="navbar navbar-expand-lg">
+        <nav className={`navbar navbar-expand-lg fixed-top ${isVisible ? 'nav-visible' : 'nav-hidden'}`}>
             <div className="container-fluid main-container">
                 <a className="navbar-brand" href="/">
                     <img
