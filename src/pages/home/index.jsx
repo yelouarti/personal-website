@@ -9,6 +9,7 @@ import tenYearsIcon from "./assets/ten-years.svg";
 import bridgeIcon from "./assets/bridge.svg";
 import hateofluxIcon from "./assets/hateoflux.svg";
 import vennDiagrammIcon from "./assets/venn-diagramm-roles.svg";
+import {Link} from "react-router-dom";
 
 
 const Home = () => {
@@ -73,8 +74,12 @@ const Home = () => {
                     <h2>Neugierig geworden?</h2>
                     <p className="p-0 m-0">Ob Beratung, neue Projekte oder einfach nur ein Kennenlernen – kontaktieren Sie mich, und wir finden gemeinsam heraus, wie ich Ihnen weiterhelfen kann.</p>
                     <div className="d-flex py-4 gap-3">
-                        <button className="std-btn">Kontakt aufnehmen</button>
-                        <button className="muted-btn">Weiter zur Expertise</button>
+                        <Link to="/contact">
+                             <button className="std-btn">Kontakt aufnehmen</button>
+                        </Link>
+                        <Link className="d-flex flex-row justify-content-center text-decoration-none" to="/expertise">
+                            <button className="muted-btn">Weiter zur Expertise</button>
+                        </Link>
                     </div>
                 </div>
             </div>
