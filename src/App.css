@@ -8,7 +8,8 @@
   flex-direction: column;
   width: 100%;
   position: relative;
-  margin: var(--header-height) auto;
+  margin: 0 auto;
+  padding-top: var(--header-height);
 }
 
 .main-container {

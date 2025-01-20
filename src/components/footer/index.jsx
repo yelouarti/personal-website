@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './style.css';
@@ -10,11 +10,25 @@ import { useTranslation } from 'react-i18next';
 import SocialIcons from "../social-icons";
 
 const Footer = () => {
-
     const { t } = useTranslation();
     const {language: currentLanguage, switchLanguage} = useContext(LanguageContext);
+    const [showButton, setShowButton] = useState(false);
 
-    // Toggle function to switch between 'de' and 'en'
+    useEffect(() => {
+        const handleScroll = () => {
+            // Show button when user scrolls down 100px from the top
+            const scrolled = window.scrollY > 100;
+            setShowButton(scrolled);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Initial check
+        handleScroll();
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     const toggleLanguage = () => {
         const newLanguage = currentLanguage === 'de' ? 'en' : 'de';
         switchLanguage(newLanguage);
@@ -30,17 +44,20 @@ const Footer = () => {
     return (
         <footer className="mt-auto">
             {/*back to top button*/}
-            <div className="row justify-content-center">
-                <div className="back-to-top-btn col-auto d-flex flex-column align-items-center justify-content-center my-5">
-                    <button
-                        onClick={scrollToTop}
-                        className="mb-3 mt-5"
-                    >
-                        <img src={arrowUpIcon} alt={t('footer.arrowUpAlt')}/>
-                    </button>
-                    <span>{t('footer.backToTop')}</span>
+            {showButton && (
+                <div className="row justify-content-center">
+                    <div className="back-to-top-btn col-auto d-flex flex-column align-items-center justify-content-center my-5">
+                        <button
+                            onClick={scrollToTop}
+                            className="mb-3 mt-5"
+                        >
+                            <img src={arrowUpIcon} alt={t('footer.arrowUpAlt')}/>
+                        </button>
+                        <span>{t('footer.backToTop')}</span>
+                    </div>
                 </div>
-            </div>
+            )}
+
             <div className="footer-wrapper">
                 <div className="container-fluid main-container">
                     {/* Row for social icons */}
