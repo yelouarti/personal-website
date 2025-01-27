@@ -6,7 +6,7 @@ import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Expertise from "./pages/expertise";
 import Projects from "./pages/projects";
-import {Routes, Route, Router} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Services from "./pages/services";
 
 

@@ -1,0 +1,81 @@
+/* Overall */
+.home-major-component {
+    margin-top: 75px;
+}
+
+/* Quote */
+#home-quote {
+    display: flex;
+    align-items: flex-start;
+    min-height: 2.5rem;
+}
+
+.block-quote-bar {
+    min-height: 1.5rem;
+    min-width: 4px;
+    align-self: stretch;
+    background-color: var(--color-highlight);
+}
+
+#home-quote i {
+    color: var(--color-highlight);
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    line-height: 1;
+    align-items: flex-start;
+    padding: 0.2rem 0.5rem;
+}
+
+#home-quote p {
+    padding-top: 0.3rem;
+    font-style: italic;
+    text-align: left;
+}
+
+/* Cards */
+#ten-year-card img,
+#communicator-card img {
+    max-height: 60px;
+}
+
+#role-card img {
+    max-height: 70px;
+}
+
+#open-source-card img {
+    max-height: 25px;
+}
+
+
+
+
+@media (min-width: 576px) {
+    #ten-year-card img,
+    #communicator-card img {
+        max-height: 70px;
+    }
+
+    #role-card img {
+        max-height: 80px;
+    }
+
+    #open-source-card img {
+        max-height: 28px;
+    }
+
+}
+
+@media (min-width: 996px) {
+    #ten-year-card img,
+    #communicator-card img {
+        max-height: 90px;
+    }
+
+    #role-card img {
+        max-height: 110px;
+    }
+
+    #open-source-card img {
+        max-height: 37px;
+    }
+}

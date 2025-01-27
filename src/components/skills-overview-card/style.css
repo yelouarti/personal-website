@@ -1,0 +1,39 @@
+.skills-overview-card-default {
+    justify-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: var(--color-muted-background);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 480px;
+    height: 225px;
+}
+
+.skills-overview-card-default h3 {
+    padding:0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.skills-overview-card-default p {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+    color: var(--color-muted-element);
+}
+
+@media (min-width: 576px) {
+    .skills-overview-card-default {
+        height: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+    .skills-overview-card-default {
+        padding: 1.2rem;
+        height: 300px;
+    }
+}

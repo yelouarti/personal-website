@@ -1,6 +1,22 @@
 /* Whole navigation bar*/
 .navbar {
-    /*min-height: rem;*/
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    height: var(--header-height);
+}
+
+
+.nav-visible {
+    transform: translateY(0);
+}
+
+.nav-hidden {
+    transform: translateY(-100%);
 }
 
 /* logo */
@@ -48,8 +64,9 @@
 
 /* Language switch */
 .separator-bar {
-    width: 2px;
-    align-self: stretch;
+    width: 1px;
+    height: 35px;
+    align-self: center;
     margin: 0 1rem;
     background-color: var(--color-muted-element);
 }
@@ -70,7 +87,7 @@
 }
 
 .header-language-switch span {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 
 .full-language-name {
@@ -101,11 +118,9 @@
 
 @media (max-width: 992px) {
 
-    /*#logo-side-menu {*/
-    /*    display: flex;*/
-    /*    align-self: center;*/
-    /*    margin: 2rem 1rem;*/
-    /*}*/
+    .offcanvas {
+        height: 100vh;
+    }
 
     /* Menu items sans language switch */
     .nav-list {
