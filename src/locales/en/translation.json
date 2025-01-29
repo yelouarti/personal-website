@@ -28,5 +28,159 @@
   },
   "hero": {
     "location": "Frankfurt am Main, Germany"
+  },
+  "skillArea": {
+    "summary": "Summary",
+    "skills": "Technical Skills",
+    "achievements": "Key Achievements"
+  },
+  "skillGraph": {
+    "levels": [
+      "No Experience",
+      "Basic Knowledge",
+      "Solid Foundation",
+      "Proven in Practice",
+      "Advanced",
+      "Expert"
+    ]
+  },
+  "expertise": {
+    "h2TechnicalExpertise": "Technical Expertise",
+    "technicalExpertiseP1": "The complexity of modern software development requires specialists who excel in specific areas while maintaining a holistic understanding of the entire development landscape. In my years of experience in developing enterprise solutions, I have developed a distinctive expert profile characterized by strong backend development and architectural design, complemented by practical experience across the entire spectrum of software development.",
+    "technicalExpertiseP2": "This visualization showcases my technical profile across five key dimensions of software development. My strongest foundation lies in backend development, where I have designed and implemented numerous microservices using Java and Spring. This is complemented by my architectural expertise, which I have contributed both as a hands-on developer and as a solution architect in large projects. In the area of testing, my years of experience in implementing comprehensive testing strategies are reflected—from unit tests to system-wide performance tests. I have continuously built and practically applied my DevOps skills alongside backend development and architectural work, routinely working with technologies such as Docker, Kubernetes, and Helm. In the frontend domain, I have successfully executed independent projects using Angular and React.",
+    "technicalExpertiseP3": "Each dimension tells its own story of overcome challenges, developed solutions, and gained insights. Expand the sections below to delve deeper into my experiences in each area.",
+    "skillAccordion": [
+      {
+        "title": "Backend",
+        "summary": "My backend development experience focuses on Java-based microservice architectures and distributed systems. In a large project, I contributed to the development of a system for processing real-time data across a fleet of microservices primarily using Spring (MVC & WebFlux), with a couple of supporting services written in Python. The system handles several terabytes of data daily through procedural and reactive programming using multiple PostgreSQL databases and RabbitMQ for asynchronous communication. Other projects included backend systems for mobile devices and control systems in Java (JBoss/JavaEE) and C++.",
+        "technicalSkills": [
+          {
+            "name": "AWS",
+            "level": 4
+          },
+          {
+            "name": "RabbitMQ",
+            "level": 4
+          },
+          {
+            "name": "PostgreSQL/Oracle",
+            "level": 4
+          },
+          {
+            "name": "Python ≤3.11",
+            "level": 4
+          },
+          {
+            "name": "Java ≤21 (Spring)",
+            "level": 5
+          }
+        ],
+        "keyAchievements": [
+          "Developed a reactive blob storage microservice handling multiple terabytes of daily data using Spring WebFlux",
+          "Performance optimization of critical services: reduced processing times by >98% through systematic analysis of system metrics and log data",
+          "Designed and implemented a modular layout system for a rendering engine"
+        ]
+      },
+      {
+        "title": "Architecture",
+        "summary": "As a Solution Architect, I design scalable, distributed systems with a focus on microservice architectures. In a large project, I worked as one of several solution architects on the technical architecture of a complex information system. The emphasis was on designing systems for the asynchronous processing of terabytes of daily data, considering performance, scalability, and fault tolerance.",
+        "technicalSkills": [
+          {
+            "name": "DDD (Domain-Driven Design)",
+            "level": 4
+          },
+          {
+            "name": "REST/HATEOAS",
+            "level": 5
+          },
+          {
+            "name": "Event-Driven Architecture",
+            "level": 4
+          },
+          {
+            "name": "Microservices Architecture",
+            "level": 5
+          }
+        ],
+        "keyAchievements": [
+          "Technical leadership of a 7-member team (DevOps, Testing, Development) focusing on agile development methodologies",
+          "Developed proof-of-concepts for new microservices and tools based on Spring Boot",
+          "Designed a modular system architecture for a digitization project applying psychological and mathematical principles"
+        ]
+      },
+      {
+        "title": "Frontend",
+        "summary": "In the frontend domain, I focus on developing modern web applications. I have developed several websites using Angular and React, as well as a JavaFX RichClient for device management. As part of my master's thesis, I created a UI/UX prototype to validate a technical concept for a digital transformation project, utilizing Figma for design and conducting systematic usability tests.",
+        "technicalSkills": [
+          {
+            "name": "UI/UX Design (Figma)",
+            "level": 3
+          },
+          {
+            "name": "React 18/JavaScript",
+            "level": 3
+          },
+          {
+            "name": "Angular 8/TypeScript",
+            "level": 2
+          }
+        ],
+        "keyAchievements": [
+          "Developed a UI/UX prototype with Figma to validate a technical digitization concept",
+          "Implemented a JavaFX RichClient for device commissioning and data recovery",
+          "Created various websites, including the one you are browsing now"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "summary": "In the DevOps domain, I focus on developing CI/CD pipelines, container technologies, and log management systems. I developed GitLab pipelines for numerous repositories, implemented specialized Docker containers, and set up log processing pipelines. The work includes AWS cloud services (especially S3), Docker/Docker Compose, Kubernetes/Helm, and various monitoring and logging tools such as Prometheus, Kibana, and Grafana. For open-source projects, I use GitHub with corresponding GitHub Actions workflows.",
+        "technicalSkills": [
+          {
+            "name": "Git & GitLab/GitHub",
+            "level": 4
+          },
+          {
+            "name": "Prometheus/Kibana/Grafana",
+            "level": 4
+          },
+          {
+            "name": "Kubernetes/Helm",
+            "level": 3
+          },
+          {
+            "name": "Docker/Docker Compose",
+            "level": 4
+          }
+        ],
+        "keyAchievements": [
+          "Developed GitLab CI/CD pipelines for multiple repositories with systematic test integration",
+          "Developed a secure Docker container and a scalable log processing pipeline (Fluentd, RabbitMQ, Elasticsearch) with backpressure mechanisms",
+          "Integrated AWS Cloud with S3 and CloudFront for optimized content delivery"
+        ]
+      },
+      {
+        "title": "Testing",
+        "summary": "My testing experience includes implementing various testing levels from unit tests (JUnit/pytest) to performance tests. I developed testing strategies for microservices and conducted systematic performance tests. A particular focus was on automating tests through continuous integration and generating realistic test data.",
+        "technicalSkills": [
+          {
+            "name": "Performance Testing (Gatling)",
+            "level": 4
+          },
+          {
+            "name": "Integration Testing (Cucumber/JUnit)",
+            "level": 5
+          },
+          {
+            "name": "Unit Testing (JUnit/pytest)",
+            "level": 5
+          }
+        ],
+        "keyAchievements": [
+          "Designed and implemented a test data generator for complex JSON data (1-3MB)",
+          "Introduced systematic performance testing with Gatling, including automated evaluation of Prometheus metrics",
+          "Developed automated integration tests for microservices using Cucumber or JUnit, including Docker-Compose-based test environments"
+        ]
+      }
+    ]
   }
 }
