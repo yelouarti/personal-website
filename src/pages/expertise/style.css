@@ -3,11 +3,11 @@
     max-width: 992px;
 }
 
-#skill-accordion h3 {
-    margin: 0;
-}
-
 .accordion-button:focus {
     box-shadow: none;
     border-color: rgba(0,0,0,.125);  /* This maintains the default border color */
+}
+
+.accordion {
+    padding: 0;
 }

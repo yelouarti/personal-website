@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './style.css';
 import { ResponsiveBar } from '@nivo/bar'
 import {useTranslation} from "react-i18next";
+import CircleRating from "../circle-rating";
 
 
 
@@ -12,19 +13,27 @@ const SkillGraph = ({id, title="", technicalSkills= [], className}) => {
     const levels = t('skillGraph.levels', { returnObjects: true });
 
     return (
-        <div id={id} className={`id container d-flex flex-column justify-content-center align-items-center ${className}`}>
+        <div id={id} className={`id d-flex flex-column justify-content-center align-items-center ${className}`}>
             <p><b>{title}</b></p>
-            <div className="col-12 col-lg-10">
+            <div className="skill-graph-rating flex-column">
+                {technicalSkills.map((skill, i) => (
+                    <div className="d-flex pb-2 justify-content-between align-items-center" key={i}>
+                        <p className="m-0">{skill.name}</p><CircleRating value={skill.level}/>
+                    </div>
+                ))}
+            </div>
+
+            <div className="skill-graph-bar-chart col-12 col-lg-10">
                 <div style={{height: `${140 + (technicalSkills.length * 30)}px`}}>
                     <ResponsiveBar
-                        data={technicalSkills}
+                        data={technicalSkills.toReversed()}
                         keys={['level']}
                         indexBy="name"
                         margin={{
                             top: 0,
                             right: 50,
                             bottom: 100,
-                            left: 300
+                            left: 210
                         }}
                         layout="horizontal"
                         valueScale={{

@@ -55,11 +55,11 @@
         "summary": "My backend development experience focuses on Java-based microservice architectures and distributed systems. In a large project, I contributed to the development of a system for processing real-time data across a fleet of microservices primarily using Spring (MVC & WebFlux), with a couple of supporting services written in Python. The system handles several terabytes of data daily through procedural and reactive programming using multiple PostgreSQL databases and RabbitMQ for asynchronous communication. Other projects included backend systems for mobile devices and control systems in Java (JBoss/JavaEE) and C++.",
         "technicalSkills": [
           {
-            "name": "AWS",
-            "level": 4
+            "name": "Java ≤21 (Spring)",
+            "level": 5
           },
           {
-            "name": "RabbitMQ",
+            "name": "Python ≤3.11",
             "level": 4
           },
           {
@@ -67,12 +67,12 @@
             "level": 4
           },
           {
-            "name": "Python ≤3.11",
+            "name": "RabbitMQ",
             "level": 4
           },
           {
-            "name": "Java ≤21 (Spring)",
-            "level": 5
+            "name": "AWS",
+            "level": 4
           }
         ],
         "keyAchievements": [
@@ -86,11 +86,7 @@
         "summary": "As a Solution Architect, I design scalable, distributed systems with a focus on microservice architectures. In a large project, I worked as one of several solution architects on the technical architecture of a complex information system. The emphasis was on designing systems for the asynchronous processing of terabytes of daily data, considering performance, scalability, and fault tolerance.",
         "technicalSkills": [
           {
-            "name": "DDD (Domain-Driven Design)",
-            "level": 4
-          },
-          {
-            "name": "REST/HATEOAS",
+            "name": "Microservices Architecture",
             "level": 5
           },
           {
@@ -98,8 +94,12 @@
             "level": 4
           },
           {
-            "name": "Microservices Architecture",
+            "name": "REST/HATEOAS",
             "level": 5
+          },
+          {
+            "name": "Domain-Driven Design",
+            "level": 4
           }
         ],
         "keyAchievements": [
@@ -113,16 +113,16 @@
         "summary": "In the frontend domain, I focus on developing modern web applications. I have developed several websites using Angular and React, as well as a JavaFX RichClient for device management. As part of my master's thesis, I created a UI/UX prototype to validate a technical concept for a digital transformation project, utilizing Figma for design and conducting systematic usability tests.",
         "technicalSkills": [
           {
-            "name": "UI/UX Design (Figma)",
-            "level": 3
+            "name": "Angular 8/TypeScript",
+            "level": 2
           },
           {
             "name": "React 18/JavaScript",
             "level": 3
           },
           {
-            "name": "Angular 8/TypeScript",
-            "level": 2
+            "name": "UI/UX Design (Figma)",
+            "level": 3
           }
         ],
         "keyAchievements": [
@@ -136,11 +136,7 @@
         "summary": "In the DevOps domain, I focus on developing CI/CD pipelines, container technologies, and log management systems. I developed GitLab pipelines for numerous repositories, implemented specialized Docker containers, and set up log processing pipelines. The work includes AWS cloud services (especially S3), Docker/Docker Compose, Kubernetes/Helm, and various monitoring and logging tools such as Prometheus, Kibana, and Grafana. For open-source projects, I use GitHub with corresponding GitHub Actions workflows.",
         "technicalSkills": [
           {
-            "name": "Git & GitLab/GitHub",
-            "level": 4
-          },
-          {
-            "name": "Prometheus/Kibana/Grafana",
+            "name": "Docker/Docker Compose",
             "level": 4
           },
           {
@@ -148,7 +144,7 @@
             "level": 3
           },
           {
-            "name": "Docker/Docker Compose",
+            "name": "Git & GitLab/GitHub",
             "level": 4
           }
         ],
@@ -163,16 +159,16 @@
         "summary": "My testing experience includes implementing various testing levels from unit tests (JUnit/pytest) to performance tests. I developed testing strategies for microservices and conducted systematic performance tests. A particular focus was on automating tests through continuous integration and generating realistic test data.",
         "technicalSkills": [
           {
-            "name": "Performance Testing (Gatling)",
+            "name": "Unit Testing",
+            "level": 5
+          },
+          {
+            "name": "Integration Testing",
+            "level": 5
+          },
+          {
+            "name": "Performance Testing",
             "level": 4
-          },
-          {
-            "name": "Integration Testing (Cucumber/JUnit)",
-            "level": 5
-          },
-          {
-            "name": "Unit Testing (JUnit/pytest)",
-            "level": 5
           }
         ],
         "keyAchievements": [

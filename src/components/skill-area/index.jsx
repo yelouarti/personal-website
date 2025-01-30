@@ -9,7 +9,7 @@ const SkillArea = ({id, summary="",  keyAchievements = [], technicalSkills= [], 
     const { t } = useTranslation();
 
     return (
-        <div id={id} className={`p-4 skills-area-default d-flex flex-column ${className}`}>
+        <div id={id} className={`p-3 skills-area-default d-flex flex-column ${className}`}>
             <h4 className="mt-0">{t("skillArea.summary")}</h4>
             <p>{summary}</p>
             <h4>{t("skillArea.skills")}</h4>

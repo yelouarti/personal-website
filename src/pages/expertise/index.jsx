@@ -5,6 +5,7 @@ import './style.css';
 import spiderChart from "./assets/spider-chart.svg"
 import SkillArea from "../../components/skill-area";
 import {useTranslation} from "react-i18next";
+import CircleRating from "../../components/circle-rating";
 
 
 const Expertise = () => {
@@ -20,6 +21,7 @@ const Expertise = () => {
                     {t("expertise.technicalExpertiseP1")}
                 </p>
                 <img
+                    id="skill-spider-chart"
                     className="content-section-spacer"
                     src={spiderChart}
                     alt="Spider chart with skill areas"
@@ -45,7 +47,7 @@ const Expertise = () => {
                                         aria-expanded={index === 0 ? 'true' : 'false'}
                                         aria-controls={itemId}
                                     >
-                                        <h3>{section.title}</h3>
+                                        <h3 className="m-0">{section.title}</h3>
                                     </button>
                                 </div>
                                 <div
