@@ -2,10 +2,15 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './style.css';
-import spiderChart from "./assets/spider-chart.svg"
+import spiderChartBig from "./assets/spider-chart.svg"
+import spiderChartSmall from "./assets/spider-chart-s.svg"
 import SkillArea from "../../components/skill-area";
 import {useTranslation} from "react-i18next";
-import CircleRating from "../../components/circle-rating";
+import image4k from "../../components/hero/assets/hero-bg-4k.webp";
+import image2k from "../../components/hero/assets/hero-bg-2k.webp";
+import imageFhd from "../../components/hero/assets/hero-bg-fhd.webp";
+import imageTablet from "../../components/hero/assets/hero-bg-tablet.webp";
+import imageMobile from "../../components/hero/assets/hero-bg-mobile.jpg";
 
 
 const Expertise = () => {
@@ -20,12 +25,11 @@ const Expertise = () => {
                 <p>
                     {t("expertise.technicalExpertiseP1")}
                 </p>
-                <img
-                    id="skill-spider-chart"
-                    className="content-section-spacer"
-                    src={spiderChart}
-                    alt="Spider chart with skill areas"
-                />
+                <picture className="content-section-spacer" id="skill-spider-chart">
+                    <source media="(min-width: 768px)" srcSet={spiderChartBig}/>
+                    <img src={spiderChartSmall} alt="Spider chart with skill areas"/>
+                </picture>
+
                 <p className="content-section-spacer">
                     {t("expertise.technicalExpertiseP2")}
                 </p>

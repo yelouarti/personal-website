@@ -11,3 +11,27 @@
 .accordion {
     padding: 0;
 }
+
+#skill-spider-chart > *{
+    max-width: 270px;
+}
+
+@media (min-width: 480px){
+    #skill-spider-chart > *{
+        max-width: 330px;
+    }
+}
+
+
+@media (min-width: 576px){
+    #skill-spider-chart > *{
+        max-width: 400px;
+    }
+}
+
+
+@media (min-width: 768px){
+    #skill-spider-chart > *{
+        max-width: 100%;
+    }
+}
