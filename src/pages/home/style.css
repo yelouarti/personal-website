@@ -60,7 +60,7 @@
 
 }
 
-@media (min-width: 996px) {
+@media (min-width: 992px) {
     #ten-year-card img,
     #communicator-card img {
         max-height: 90px;

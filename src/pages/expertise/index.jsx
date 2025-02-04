@@ -6,12 +6,34 @@ import spiderChartBig from "./assets/spider-chart.svg"
 import spiderChartSmall from "./assets/spider-chart-s.svg"
 import SkillArea from "../../components/skill-area";
 import {useTranslation} from "react-i18next";
-import image4k from "../../components/hero/assets/hero-bg-4k.webp";
-import image2k from "../../components/hero/assets/hero-bg-2k.webp";
-import imageFhd from "../../components/hero/assets/hero-bg-fhd.webp";
-import imageTablet from "../../components/hero/assets/hero-bg-tablet.webp";
-import imageMobile from "../../components/hero/assets/hero-bg-mobile.jpg";
+import EducationTimeline from "../../components/education-timeline";
 
+const educationData = [
+    {
+        degree: "M.Sc. High Integrity Systems (Berufsbegleitend)",
+        description: "Informatik mit Schwerpunkt auf formalen Methoden, IT-Security, sicherheitskritischen Systemen und Datenanalyse",
+        institution: "Frankfurt University of Applied Sciences",
+        location: "Frankfurt am Main, Deutschland",
+        year: "2014 - 2018",
+        grade: "1.5",
+        thesis: {
+            title: 'Konzeptentwurf zur Digitalisierung einer Kindertagesstätte unter Anwendung von Actor-Actor Systems Engineering.',
+            description: "In der Thesis wurde ein Proof-of-Concept des AASE-Ansatzes, eines HMI/UX-Vorgehensmodells auf Basis psychologischer und mathematischer Prinzipien, zur Erstellung eines Digitalisierungskonzepts für eine Bildungseinrichtung umgesetzt. Dabei wurden eine modulare Systemarchitektur konzipiert, Digitalisierungspotenziale identifiziert und modelliert sowie ein UX/UI-Prototyp entwickelt und durch Usability-Tests validiert."
+        }
+    },
+    {
+        degree: "B.Eng. Ingenieur Informatik",
+        description: "Kombination aus Informatik und Ingenieurwissenschaften mit Fokus auf Softwareentwicklung, Hardware-Design und technische Modellierung",
+        institution: "Frankfurt University of Applied Sciences",
+        location: "Frankfurt am Main, Deutschland",
+        year: "2011 - 2014",
+        grade: "1.4",
+        thesis: {
+            title: 'Realisierung eines Tools in JavaFX zur Aufzeichnung von CAN-Botschaften mehrerer Motorsteuergeräte während eines Lebensdauertests',
+            description: "In der Thesis wurde im Rahmen der Entwicklung von Motorsteuergeräten eine low-level C API in eine C++ API mit IT-Security, Auto-Connection und erweiterten Funktionalitäten überführt, um eine interoperable Server-Client-API zu erstellen. Ein plattformunabhängiges Kommunikationsmodul für den Datentransfer zwischen Motorsteuergerät und PC sowie eine Überwachungssoftware für Ausdauertests wurden implementiert. Die API-Interoperabilität erfolgt über ein selbst entwickeltes, XML-basiertes Kommunikationsprotokoll, das das Auslesen, Bespielen und die Überwachung von CAN-Nachrichten ermöglicht."
+        }
+    }
+];
 
 const Expertise = () => {
 
@@ -71,8 +93,15 @@ const Expertise = () => {
                         );
                     })}
                 </div>
-
             </div>
+
+            <h2 className="content-section-spacer">Bildung</h2>
+            <p>Zwischen 2011 und 2018 habe ich an der Frankfurt University of Applied Sciences zunächst den Bachelor in Ingenieurinformatik absolviert und anschließend berufsbegleitend den Master in High Integrity Systems. Diese Kombination aus Informatik und Ingenieurwissenschaften hat mir ein breites Fundament in Softwareentwicklung, Hardware-Design, IT-Sicherheit, formalen Methoden und datenintensiven Systemen vermittelt.</p>
+            <EducationTimeline
+                data={educationData}
+                id="education-section"
+                className="my-custom-class"
+            />
         </div>
     );
 }
