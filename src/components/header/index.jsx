@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -10,6 +10,7 @@ import { useTranslation } from 'react-i18next';
 import {Link} from "react-router-dom";
 
 const Header = () => {
+    const [isAtTop, setIsAtTop] = useState(true);
     const { t } = useTranslation();
     const {language: currentLanguage, switchLanguage} = useContext(LanguageContext);
     const isVisible = useScrollDirection();
@@ -20,8 +21,20 @@ const Header = () => {
         switchLanguage(newLanguage);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsAtTop(window.scrollY === 0);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Check initial position
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <nav className={`navbar navbar-expand-lg fixed-top ${isVisible ? 'nav-visible' : 'nav-hidden'}`}>
+        <nav
+            className={`navbar navbar-expand-lg fixed-top ${isVisible ? 'nav-visible' : 'nav-hidden'} ${!isAtTop ? 'nav-scrolled' : ''}`}>
             <div className="container-fluid main-container">
                 <a className="navbar-brand" href="/">
                     <img
