@@ -93,6 +93,7 @@
 
 
 .education-timeline-degree {
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 0 0 0.5rem 0;
     line-height: 1.2;
@@ -152,6 +153,13 @@
     transition: transform 0.2s ease-in-out;
     flex-shrink: 0;
 }
+
+@media (min-width: 340px) {
+    .education-timeline-degree {
+        font-size: 1.3rem;
+    }
+}
+
 @media (min-width: 768px) {
     .education-timeline-item {
         margin: 0 0 3rem 1.5rem;
