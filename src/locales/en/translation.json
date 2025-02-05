@@ -177,6 +177,67 @@
           "Developed automated integration tests for microservices using Cucumber or JUnit, including Docker-Compose-based test environments"
         ]
       }
-    ]
+    ],
+    "h2Education": "Education",
+    "education": {
+      "introduction" : "Between 2011 and 2018, I studied at the Frankfurt University of Applied Sciences, first completing a Bachelor's degree in Computer Engineering and then pursuing a part-time Master's degree in High Integrity Systems. This combination of Computer Science and Engineering provided me with a strong foundation in software development, hardware design, IT security, formal methods, and data-intensive systems.",
+      "degrees" : [
+        {
+          "degree": "M.Sc. High Integrity Systems (Part-Time)",
+          "description": "Computer Science with a focus on formal methods, IT security, safety-critical systems, and data analysis.",
+          "institution": "Frankfurt University of Applied Sciences",
+          "location": "Frankfurt am Main, Germany",
+          "year": "2014 - 2018",
+          "grade": "Grade: 1.5 (Equivalent GPA: ~3.5/4.0)",
+          "thesis": {
+            "title": "Concept Design for the Digitalization of a Kindergarten Using Actor-Actor Systems Engineering.",
+            "description": "This thesis implemented a proof-of-concept for the Actor-Actor Systems Engineering (AASE) approach, an HMI/UX methodology based on psychological and mathematical principles, to develop a digitalization concept for an educational institution. A modular system architecture was designed, digitalization potentials were identified and modeled, and a UX/UI prototype was developed and validated through usability testing."
+          }
+        },
+        {
+          "degree": "B.Eng. Computer Engineering",
+          "description": "Combination of Computer Science and Engineering with a focus on software development, hardware design, and technical modeling.",
+          "institution": "Frankfurt University of Applied Sciences",
+          "location": "Frankfurt am Main, Germany",
+          "year": "2011 - 2014",
+          "grade": "Grade: 1.4 (Equivalent GPA: ~3.6/4.0)",
+          "thesis": {
+            "title": "Development of a JavaFX Tool for Recording CAN Messages from Multiple Engine Control Units During a Lifetime Test.",
+            "description": "As part of the development of engine control units, this thesis transformed a low-level C API into a C++ API with IT security features, auto-connection, and extended functionalities to create an interoperable server-client API. A platform-independent communication module was implemented for data transfer between the engine control unit and a PC, along with monitoring software for endurance testing. The API interoperability was achieved via a custom-developed, XML-based communication protocol, enabling the reading, programming, and monitoring of CAN messages."
+          }
+        }
+      ]
+    },
+    "h2Certification": "Certifications",
+    "certifications": {
+      "introduction": "My expertise in modern software development and IT services is backed by internationally recognized certifications. These include technical cloud competencies, agile methodologies, and IT service management—three key pillars for successful digital projects.",
+      "cards": [
+        {
+          "title": "AWS Cloud Practitioner",
+          "issuer": "Amazon Web Services",
+          "description": "Fundamental understanding of the AWS Cloud platform, including security, architecture, pricing, and services.",
+          "logo": "aws-logo"
+        },
+        {
+          "title": "Scrum Master (PSM I)",
+          "issuer": "scrum.org",
+          "description": "Expertise in leading and supporting agile teams using the Scrum methodology, including Scrum events, artifacts, and roles.",
+          "logo": "scrumorg-logo"
+        },
+        {
+          "title": "Certified Agile Requirements Specialist (CARS)",
+          "issuer": "Agile Requirements Institute",
+          "description": "Specialization in agile requirements analysis and management, focusing on user stories, backlog management, and value delivery.",
+          "logo": "agile-institute-logo"
+        },
+        {
+          "title": "ITIL Foundation in IT Service Management",
+          "issuer": "Axelos",
+          "description": "Comprehensive knowledge of IT service management based on the ITIL framework, including service strategy, design, transition, and operation.",
+          "logo": "axelos-logo"
+        }
+      ]
+    }
+
   }
 }

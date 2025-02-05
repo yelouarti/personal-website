@@ -1,0 +1,11 @@
+.accordion {
+    --bs-accordion-border-color: var(--color-muted-border)
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion {
+    padding: 0;
+}

@@ -1,20 +1,3 @@
-#skill-accordion {
-    width: 100%;
-    max-width: 992px;
-}
-
-.accordion {
-    --bs-accordion-border-color: var(--color-muted-border)
-}
-
-.accordion-button:focus {
-    box-shadow: none;
-}
-
-.accordion {
-    padding: 0;
-}
-
 #skill-spider-chart > *{
     max-width: 270px;
 }

@@ -18,7 +18,7 @@ const EducationTimeline = ({
 
     return (
         <div
-            className={`education-timeline-wrapper pt-3 ${className}`}
+            className={`education-timeline-wrapper centered-content-container ${className}`}
             id={id}
         >
             <div className="education-timeline-container">
@@ -61,7 +61,7 @@ const EducationTimeline = ({
                             {/* Grade */}
                             <div className="education-timeline-grade">
                                 <i className="bi bi-award"></i>
-                                <span>Note: {achievement.grade}</span>
+                                <span>{achievement.grade}</span>
                             </div>
 
                             {/* Thesis */}
