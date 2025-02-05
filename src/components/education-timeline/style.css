@@ -3,6 +3,10 @@
     color: var(--color-text);
 }
 
+.education-timeline-info {
+    margin-top: 0.5rem;
+    position: relative;
+}
 
 .education-timeline-container {
     position: relative;
@@ -46,6 +50,37 @@
     z-index: 1;
 }
 
+.info-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    & i {
+        font-size: 1rem;
+    }
+
+    & i.active {
+        color: var(--color-highlight);
+        opacity: 1;
+    }
+}
+
+.info-content {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    background-color: var(--color-muted-background);
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    color: var(--color-muted-element);
+}
+
 
 .bi-calendar-event,
 .bi-award {
@@ -71,7 +106,7 @@
 
 .education-timeline-location {
     margin-top: 0.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--color-muted-element);
     font-size: 0.875rem;
     display: flex;
@@ -86,7 +121,7 @@
 }
 
 .education-timeline-grade {
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0;
 }
 
 .education-timeline-thesis-container {

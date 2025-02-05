@@ -26,7 +26,7 @@ const Home = () => {
                     bringe ich komplexe Anforderungen effizient auf den Punkt – von der Konzeption bis zur Umsetzung.
                 </p>
 
-                <div id="home-quote" className="content-section-spacer justify-content-center">
+                <div id="home-quote" className="content-section-inter-spacer justify-content-center">
                     <div className="block-quote-bar"/>
                     <i className="bi bi-quote d-flex"></i>
                     <p>In der Begrenzung zeigt sich nicht die Einschränkung, sondern die Quelle echter Innovation.</p>

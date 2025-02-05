@@ -184,27 +184,19 @@
       "degrees" : [
         {
           "degree": "M.Sc. High Integrity Systems (Part-Time)",
-          "description": "Computer Science with a focus on formal methods, IT security, safety-critical systems, and data analysis.",
+          "description": "International computer science program taught in English, specializing in formal methods, IT security, safety-critical systems, and with a strong focus on data analysis.",
           "institution": "Frankfurt University of Applied Sciences",
           "location": "Frankfurt am Main, Germany",
           "year": "2014 - 2018",
-          "grade": "Grade: 1.5 (Equivalent GPA: ~3.5/4.0)",
-          "thesis": {
-            "title": "Concept Design for the Digitalization of a Kindergarten Using Actor-Actor Systems Engineering.",
-            "description": "This thesis implemented a proof-of-concept for the Actor-Actor Systems Engineering (AASE) approach, an HMI/UX methodology based on psychological and mathematical principles, to develop a digitalization concept for an educational institution. A modular system architecture was designed, digitalization potentials were identified and modeled, and a UX/UI prototype was developed and validated through usability testing."
-          }
+          "grade": "Grade: 1.5 (Equivalent GPA: ~3.5/4.0)"
         },
         {
           "degree": "B.Eng. Computer Engineering",
-          "description": "Combination of Computer Science and Engineering with a focus on software development, hardware design, and technical modeling.",
+          "description": "Combination of Computer Science and Engineering with a focus on software development, hardware design, and system integration.",
           "institution": "Frankfurt University of Applied Sciences",
           "location": "Frankfurt am Main, Germany",
           "year": "2011 - 2014",
-          "grade": "Grade: 1.4 (Equivalent GPA: ~3.6/4.0)",
-          "thesis": {
-            "title": "Development of a JavaFX Tool for Recording CAN Messages from Multiple Engine Control Units During a Lifetime Test.",
-            "description": "As part of the development of engine control units, this thesis transformed a low-level C API into a C++ API with IT security features, auto-connection, and extended functionalities to create an interoperable server-client API. A platform-independent communication module was implemented for data transfer between the engine control unit and a PC, along with monitoring software for endurance testing. The API interoperability was achieved via a custom-developed, XML-based communication protocol, enabling the reading, programming, and monitoring of CAN messages."
-          }
+          "grade": "Grade: 1.4 (Equivalent GPA: ~3.6/4.0)"
         }
       ]
     },
