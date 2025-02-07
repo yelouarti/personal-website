@@ -7,9 +7,10 @@ import globe from '../../assets/images/icons/globe.svg';
 import {LanguageContext} from "./LanguageContext";
 import {useScrollDirection} from "./useScrollDirection"
 import { useTranslation } from 'react-i18next';
-import {Link} from "react-router-dom";
+import {Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+    const location = useLocation();
     const [isAtTop, setIsAtTop] = useState(true);
     const { t } = useTranslation();
     const {language: currentLanguage, switchLanguage} = useContext(LanguageContext);
@@ -75,23 +76,35 @@ const Header = () => {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav nav-list ms-auto">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/expertise">
+                                <Link
+                                    className={`nav-link ${location.pathname === '/expertise' ? 'nav-link-active' : ''}`}
+                                    to="/expertise"
+                                >
                                     {t('header.expertise')}
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/services">
+                                <Link
+                                    className={`nav-link ${location.pathname === '/services' ? 'nav-link-active' : ''}`}
+                                    to="/services"
+                                >
                                     {t('header.services')}
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/projects">
+                                <Link
+                                    className={`nav-link ${location.pathname === '/projects' ? 'nav-link-active' : ''}`}
+                                    to="/projects"
+                                >
                                     {t('header.projects')}
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/contact">
-                                    <button className="contact-btn">
+                                <Link
+                                    to="/contact"
+
+                                >
+                                    <button className={location.pathname === '/contact' ? 'nav-link-active' : 'contact-btn'}>
                                         {t('header.contact')}
                                     </button>
                                 </Link>

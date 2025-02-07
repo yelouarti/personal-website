@@ -82,7 +82,6 @@ Thumbs.db
 
 # Gatsby files
 .cache/
-public/
 
 # Temporary files
 tmp/

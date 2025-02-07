@@ -17,7 +17,7 @@ const EducationTimeline = ({
     };
 
     return (
-        <div className="education-timeline-wrapper centered-content-container" id={id}>
+        <div className={`education-timeline-wrapper centered-content-container ${className}`} id={id}>
             <div className="education-timeline-container">
                 <div className="education-timeline-line"/>
                 {data.map((achievement, index) => (
