@@ -49,7 +49,15 @@ const EducationTimeline = ({
                                 {achievement.institution}
                             </p>
 
-                            {/* Description now collapses here, before location */}
+
+
+                            {/* Location */}
+                            <div className="education-timeline-location">
+                                <i className="bi bi-geo-alt"></i>
+                                <span>{achievement.location}</span>
+                            </div>
+
+                            {/* Description now collapses here */}
                             {achievement.description && (
                                 <Collapse in={expandedInfo[index]}>
                                     <div className="info-content">
@@ -57,12 +65,6 @@ const EducationTimeline = ({
                                     </div>
                                 </Collapse>
                             )}
-
-                            {/* Location */}
-                            <div className="education-timeline-location">
-                                <i className="bi bi-geo-alt"></i>
-                                <span>{achievement.location}</span>
-                            </div>
 
                             {/* Grade */}
                             <div className="education-timeline-grade">

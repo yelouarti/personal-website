@@ -21,7 +21,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.7;
-    text-align: justify;
+    text-align: left;
 }
 
 li {
@@ -38,6 +38,10 @@ html {
 @media screen and (min-width: 768px) {
     html {
         font-size: 100%; /* 16px */
+    }
+
+    body {
+        text-align: justify;
     }
 }
 

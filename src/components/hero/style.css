@@ -45,12 +45,12 @@
 }
 
 #hc-role {
-    font-size: 14px;
+    font-size: 13px;
     margin: 5px 0 0 0;
 }
 
 #hc-location {
-    font-size: 13px;
+    font-size: 12px;
     margin: 5px 0 0 0;
 }
 
@@ -105,6 +105,17 @@
         margin: 0;
     }
 }
+
+@media (min-width: 340px) {
+    #hc-role {
+        font-size: 14px;
+    }
+
+    #hc-location {
+        font-size: 13px;
+    }
+}
+
 
 /*1301px-1920px FHD*/
 @media (min-width: 1301px) {
