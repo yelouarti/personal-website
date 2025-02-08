@@ -25,10 +25,211 @@
     "globeAlt": "Sprachwechsel",
     "datenschutz": "Datenschutz",
     "impressum": "Impressum",
-    "copyright":
-    "© {{year}} Younes El Ouarti – Alle Rechte Vorbehalten"
+    "copyright": "© {{year}} Younes El Ouarti – Alle Rechte Vorbehalten"
   },
   "hero": {
     "location": "Frankfurt am Main, Deutschland"
+  },
+  "skillArea": {
+    "summary": "Zusammenfassung",
+    "skills": "Technische Fähigkeiten",
+    "achievements": "Wichtigste Erfolge"
+  },
+  "skillGraph": {
+     "levels": [
+       "Keine Erfahrung",
+       "Grundkenntnisse",
+       "Solide Basis",
+       "Praxisbewährt",
+       "Fortgeschritten",
+       "Experte"
+     ]
+  },
+  "expertise": {
+    "h2TechnicalExpertise": "Technische Expertise",
+    "technicalExpertiseP1": "Die Komplexität moderner Softwareentwicklung erfordert Spezialisten, die sich in bestimmten Bereichen auszeichnen und gleichzeitig ein ganzheitliches Verständnis der gesamten Entwicklungslandschaft bewahren. In meiner jahrelangen Erfahrung in der Entwicklung von Unternehmenslösungen habe ich ein charakteristisches Expertenprofil entwickelt, das sich durch eine ausgeprägte Backend-Entwicklung und architektonische Gestaltung auszeichnet, ergänzt durch praktische Erfahrung über das gesamte Spektrum der Softwareentwicklung hinweg.",
+    "technicalExpertiseP2": "Diese Visualisierung zeigt mein technisches Profil in fünf Schlüsseldimensionen der Softwareentwicklung. Mein stärkstes Fundament liegt in der Backend-Entwicklung, wo ich zahlreiche Microservices mit Java und Spring konzipiert und implementiert habe. Dies wird ergänzt durch meine architektonische Expertise, die ich sowohl als praktischer Entwickler als auch als Lösungsarchitekt in großen Projekten eingebracht habe. Im Bereich Testing spiegelt sich meine jahrelange Erfahrung in der Implementierung umfassender Teststrategien wider - von Unit-Tests bis hin zu systemweiten Performance-Tests. Meine DevOps-Kenntnisse habe ich kontinuierlich parallel zur Backend-Entwicklung und Architekturarbeit aufgebaut und praktisch eingesetzt, wobei ich routiniert mit Technologien wie Docker, Kubernetes und Helm arbeite. Im Frontend-Bereich habe ich bereits eigenständige Projekte mit Angular und React erfolgreich umgesetzt.",
+    "technicalExpertiseP3": "Jede Dimension erzählt ihre eigene Geschichte von gemeisterten Herausforderungen, entwickelten Lösungen und gewonnenen Erkenntnissen. Erweitern Sie die untenstehenden Abschnitte, um tiefer in meine Erfahrungen in jedem Bereich einzutauchen.",
+    "skillAccordion": [
+      {
+        "title": "Backend",
+        "summary": "Meine Backend-Entwicklungserfahrung konzentriert sich auf Java-basierte Microservice-Architekturen und verteilte Systeme. In einem umfangreichen Projekt war ich an der Entwicklung eines Systems zur Verarbeitung von Echtzeit-Daten über eine Flotte von Microservices beteiligt, das primär mit Spring (MVC & WebFlux) umgesetzt wurde, wobei einige unterstützende Services in Python entwickelt wurden. Das System bewältigt täglich mehrere Terabyte an Daten durch prozedurale und reaktive Programmierung mit mehreren PostgreSQL-Datenbanken und RabbitMQ für asynchrone Kommunikation. Weitere Projekte umfassten Backend-Systeme für mobile Geräte und Steuerungssysteme in Java (JBoss/JavaEE) bzw. C++.",
+        "technicalSkills": [
+          {
+            "name": "Java ≤21 (Spring)",
+            "level": 5
+          },
+          {
+            "name": "Python ≤3.11",
+            "level": 4
+          },
+          {
+            "name": "PostgreSQL/Oracle",
+            "level": 4
+          },
+          {
+            "name": "RabbitMQ",
+            "level": 4
+          },
+          {
+            "name": "AWS",
+            "level": 4
+          }
+        ],
+        "keyAchievements": [
+          "Entwicklung eines reaktiven Blob-Speicher-Microservices für mehrere Terabytes täglicher Daten mit Spring WebFlux",
+          "Performance-Optimierung kritischer Services: Reduzierung der Verarbeitungszeiten um >98% durch systematische Analyse von Systemmetriken und Logdaten",
+          "Konzeption und Implementierung eines modularen Layouting-Systems für eine Rendering-Engine"
+        ]
+      },
+      {
+        "title": "Architektur",
+        "summary": "Als Solution Architect gestalte ich skalierbare, verteilte Systeme mit Fokus auf Microservice-Architekturen. In einem großen Projekt arbeitete ich als einer von mehreren Solution Architects an der technischen Architektur eines komplexen Informationssystems. Der Schwerpunkt lag auf der Konzeption von Systemen zur asynchronen Verarbeitung von Terabytes täglicher Daten unter Berücksichtigung von Performance, Skalierbarkeit und Ausfallsicherheit.",
+        "technicalSkills": [
+          {
+            "name": "Microservices Architecture",
+            "level": 5
+          },
+          {
+            "name": "Event-Driven Architecture",
+            "level": 4
+          },
+          {
+            "name": "REST/HATEOAS",
+            "level": 5
+          },
+          {
+            "name": "Domain-Driven Design",
+            "level": 4
+          }
+        ],
+        "keyAchievements": [
+          "Technische Leitung eines 7-köpfigen Teams (DevOps, Test, Entwicklung) mit Fokus auf agile Entwicklungsmethoden",
+          "Entwicklung von Proof-of-Concepts für neue Microservices und Tools basierend auf Spring Boot",
+          "Design einer modularen Systemarchitektur für ein Digitalisierungsprojekt unter Anwendung psychologischer und mathematischer Prinzipien"
+        ]
+      },
+      {
+        "title": "Frontend",
+        "summary": "Im Frontend-Bereich konzentriere ich mich auf die Entwicklung moderner Webanwendungen. Ich entwickelte mehrere Websites mit Angular und React, sowie einen JavaFX-RichClient für Geräteverwaltung. Im Rahmen meiner Masterarbeit erstellte ich einen UI/UX-Prototyp zur Validierung eines technischen Konzepts für ein digitales Transformationsprojekt, wobei ich Figma für das Design nutzte und systematische Usability-Tests durchführte.",
+        "technicalSkills": [
+          {
+            "name": "Angular 8/TypeScript",
+            "level": 2
+          },
+          {
+            "name": "React 18/JavaScript",
+            "level": 3
+          },
+          {
+            "name": "UI/UX Design (Figma)",
+            "level": 3
+          }
+        ],
+        "keyAchievements": [
+          "Entwicklung eines UI/UX-Prototyps mit Figma zur Validierung eines technischen Digitalisierungskonzepts",
+          "Implementierung eines JavaFX-RichClients für Geräte-Inbetriebnahme und Datenrettung",
+          "Entwickelte mehrere Webseiten, darunter auch diese hier"
+        ]
+      },
+      {
+        "title": "DevOps",
+        "summary": "Im DevOps-Bereich konzentriere ich mich auf die Entwicklung von CI/CD-Pipelines, Container-Technologien und Log-Management-Systeme. Ich entwickelte GitLab-Pipelines für zahlreiche Repositories, implementierte spezialisierte Docker-Container und setzte Log-Verarbeitungspipelines um. Die Arbeit umfasst AWS-Cloud-Services (insbesondere S3), Docker/Docker Compose, Kubernetes/Helm und verschiedene Monitoring- und Logging-Tools wie Prometheus, Kibana und Grafana. Für Open-Source-Projekte nutze ich GitHub mit entsprechenden GitHub Actions Workflows.",
+        "technicalSkills": [
+          {
+            "name": "Docker/Docker Compose",
+            "level": 4
+          },
+          {
+            "name": "Kubernetes/Helm",
+            "level": 3
+          },
+          {
+            "name": "Git & GitLab/GitHub",
+            "level": 4
+          }
+        ],
+        "keyAchievements": [
+          "Entwicklung von GitLab CI/CD-Pipelines für multiple Repositories mit systematischer Test-Integration",
+          "Entwicklung eines sicheren Docker-Containers und einer skalierbaren Log-Verarbeitungspipeline (Fluentd, RabbitMQ, Elasticsearch) mit Backpressure-Mechanismen",
+          "AWS-Cloud-Integration mit S3 und CloudFront für optimierte Content-Delivery"
+        ]
+      },
+      {
+        "title": "Testing",
+        "summary": "Meine Testing-Erfahrung umfasst die Implementierung verschiedener Testebenen von Unit Tests (JUnit/pytest) bis Performance Tests. Ich entwickelte Teststrategien für Microservices und führte systematische Performance-Tests durch. Ein besonderer Fokus lag auf der Automatisierung von Tests mittels Continuous Integration und der Generierung realistischer Testdaten.",
+        "technicalSkills": [
+          {
+            "name": "Unit Testing",
+            "level": 5
+          },
+          {
+            "name": "Integration Testing",
+            "level": 5
+          },
+          {
+            "name": "Performance Testing",
+            "level": 4
+          }
+        ],
+        "keyAchievements": [
+          "Konzeption und Implementierung eines Testdatengenerators für komplexe JSON-Daten (1-3MB)",
+          "Einführung systematischer Performance-Tests mit Gatling, inklusive automatisierter Auswertung von Prometheus-Metriken",
+          "Entwicklung automatisierter Integrationstests für Microservices mit Cucumber oder JUnit, inklusive Docker-Compose-basierter Testumgebungen"
+        ]
+      }
+    ],
+    "h2Education": "Bildung",
+    "education": {
+      "introduction" : "Zwischen 2011 und 2018 habe ich an der Frankfurt University of Applied Sciences zunächst den Bachelor in Ingenieurinformatik absolviert und anschließend berufsbegleitend den Master in High Integrity Systems. Diese Kombination aus Informatik und Ingenieurwissenschaften hat mir ein breites Fundament in Softwareentwicklung, Hardware-Design, IT-Sicherheit, formalen Methoden und datenintensiven Systemen vermittelt.",
+      "degrees" : [
+        {
+          "degree": "M.Sc. High Integrity Systems (Berufsbegleitend)",
+          "description": "Internationaler, englischsprachiger Informatik-Studiengang mit Spezialisierung auf formale Methoden, IT-Security, sicherheitskritische Systeme und einem starken Fokus auf Datenanalyse.",
+          "institution": "Frankfurt University of Applied Sciences",
+          "location": "Frankfurt am Main, Deutschland",
+          "year": "2014 - 2018",
+          "grade": "Note: 1.5"
+        },
+        {
+          "degree": "B.Eng. Ingenieur Informatik",
+          "description": "Kombination aus Informatik und Ingenieurwissenschaften mit Fokus auf Softwareentwicklung, Hardware-Design und Systemintegration.",
+          "institution": "Frankfurt University of Applied Sciences",
+          "location": "Frankfurt am Main, Deutschland",
+          "year": "2011 - 2014",
+          "grade": "Note: 1.4"
+        }
+      ]
+    },
+    "h2Certification": "Zertifizierungen",
+    "certifications" : {
+      "introduction": "Meine Expertise in der modernen Softwareentwicklung und IT-Dienstleistung wird durch international anerkannte Zertifizierungen bestätigt. Diese umfassen sowohl technische Cloud-Kompetenzen als auch Fähigkeiten in agilen Methoden und IT-Service-Management - drei zentrale Säulen für erfolgreiche digitale Projekte.",
+      "cards" : [
+        {
+          "title": "AWS Cloud Practitioner",
+          "issuer": "Amazon Web Services",
+          "description": "Grundlegendes Verständnis der AWS Cloud-Plattform, einschließlich Sicherheit, Architektur, Preisgestaltung und Services.",
+          "logo": "aws-logo"
+        },
+        {
+          "title": "Scrum Master (PSM I)",
+          "issuer": "scrum.org",
+          "description": "Expertise in der Führung und Unterstützung von agilen Teams unter Anwendung der Scrum-Methodik, einschließlich Scrum Events, Artefakte und Rollen.",
+          "logo": "scrumorg-logo"
+        },
+        {
+          "title": "Certified Agile Requirements Specialist (CARS)",
+          "issuer": "Agile Requirements Institute",
+          "description": "Spezialisierung auf agile Anforderungsanalyse und -management, mit Fokus auf User Stories, Backlog Management und Value Delivery.",
+          "logo": "agile-institute-logo"
+        },
+        {
+          "title": "ITIL Foundation in IT-Service Management",
+          "issuer": "Axelos",
+          "description": "Fundierte Kenntnisse im IT-Service Management nach ITIL Framework, einschließlich Service Strategy, Design, Transition und Operation.",
+          "logo": "axelos-logo"
+        }
+      ]
+    }
   }
 }

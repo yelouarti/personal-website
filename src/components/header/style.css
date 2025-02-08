@@ -1,6 +1,6 @@
 /* Whole navigation bar*/
 .navbar {
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,13 +10,16 @@
     height: var(--header-height);
 }
 
-
 .nav-visible {
     transform: translateY(0);
 }
 
 .nav-hidden {
     transform: translateY(-100%);
+}
+
+.nav-scrolled {
+    border-bottom: 1px solid var(--color-muted-element);
 }
 
 /* logo */
@@ -40,11 +43,21 @@
 }
 
 .nav-link:hover,
+.nav-link-active:hover,
 .header-language-switch:hover *.inactive-language {
     text-decoration: underline;
     text-underline-offset: 12px;
     text-decoration-thickness: 2px;
+    transition: all 0.3s ease;
 }
+
+.nav-link-active {
+    font-weight: bold;
+    color: var(--color-highlight) !important;
+    border: 0;
+    background: transparent;
+}
+
 
 .contact-btn {
     padding: 0.1rem 1rem;
@@ -83,7 +96,6 @@
 
 .header-language-switch img {
     max-height: 1rem;
-
 }
 
 .header-language-switch span {
@@ -93,6 +105,7 @@
 .full-language-name {
     display: none;
 }
+
 .abbreviated-language-name {
     display: flex;
 }
@@ -105,7 +118,7 @@
 .active-language {
     color: var(--color-highlight);
     font-weight: bold;
- }
+}
 
 .inactive-language {
     color: var(--color-muted-element);
@@ -117,7 +130,6 @@
 }
 
 @media (max-width: 992px) {
-
     .offcanvas {
         height: 100vh;
     }
@@ -127,13 +139,12 @@
         align-items: flex-start;
     }
 
-
     .nav-list * {
         font-size: 1.3rem;
     }
 
-
     .nav-link:hover,
+    .nav-link-active:hover,
     .header-language-switch:hover *.inactive-language {
         text-decoration: none;
     }
@@ -146,8 +157,8 @@
         padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
         border: 0;
         border-radius: 0;
-        font-weight: bold;
         width: 100%;
+        color: var(--color-text);
         text-align: left;
     }
 
@@ -157,6 +168,11 @@
         box-shadow: none;
         transform: none;
     }
+
+    .nav-link-active {
+        padding: 8px 0 8px 0;
+    }
+
 
     /* Language switch */
     .separator-bar {
@@ -178,6 +194,7 @@
     .full-language-name {
         display: flex;
     }
+
     .abbreviated-language-name {
         display: none;
     }

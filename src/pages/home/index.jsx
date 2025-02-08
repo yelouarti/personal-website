@@ -26,13 +26,13 @@ const Home = () => {
                     bringe ich komplexe Anforderungen effizient auf den Punkt – von der Konzeption bis zur Umsetzung.
                 </p>
 
-                <div id="home-quote" className="home-major-component justify-content-center">
+                <div id="home-quote" className="content-section-inter-spacer justify-content-center">
                     <div className="block-quote-bar"/>
                     <i className="bi bi-quote d-flex"></i>
                     <p>In der Begrenzung zeigt sich nicht die Einschränkung, sondern die Quelle echter Innovation.</p>
                 </div>
 
-                <div id="home-cards" className="container home-major-component px-md-4">
+                <div id="home-cards" className="container content-section-spacer px-md-4">
                     <div className="row g-4 row-cols-1 row-cols-md-2">
                         <div className="col d-flex  justify-content-center justify-content-md-end">
                             <SkillsOverviewCard
@@ -70,7 +70,7 @@ const Home = () => {
                 </div>
 
 
-                <div className="home-major-component">
+                <div className="content-section-spacer">
                     <h2>Neugierig geworden?</h2>
                     <p className="p-0 m-0">Ob Beratung, neue Projekte oder einfach nur ein Kennenlernen – kontaktieren Sie mich, und wir finden gemeinsam heraus, wie ich Ihnen weiterhelfen kann.</p>
                     <div className="d-flex py-4 gap-3">

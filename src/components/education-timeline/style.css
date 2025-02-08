@@ -1,0 +1,185 @@
+.education-timeline-wrapper * {
+    text-align: left;
+    color: var(--color-text);
+}
+
+.education-timeline-info {
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.education-timeline-container {
+    position: relative;
+}
+
+.education-timeline-line {
+    position: absolute;
+    height: 100%;
+    top: 0.4rem;
+    width: 2px;
+    background-color: var(--color-muted-border);
+}
+
+.education-timeline-line::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    width: 2px;
+    height: 2rem;
+    background-image: linear-gradient(var(--color-muted-border) 50%, transparent 50%);
+    background-size: 2px 10px;
+    background-repeat: repeat-y;
+
+}
+
+.education-timeline-item {
+    position: relative;
+    margin: 0 0 3rem 0.8rem;
+    padding-left: 0.8rem;
+}
+
+.education-timeline-dot {
+    position: absolute;
+    left: -16.2px;
+    width:  0.8rem;
+    height: 0.8rem;
+    top: 0.4rem;
+    border-radius: 50%;
+    background-color: var(--color-highlight);
+    z-index: 1;
+}
+
+.info-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    & i {
+        font-size: 1rem;
+    }
+
+    & i.active {
+        color: var(--color-highlight);
+        opacity: 1;
+    }
+}
+
+.info-content {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    background-color: var(--color-muted-background);
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    color: var(--color-muted-element);
+}
+
+
+.bi-calendar-event,
+.bi-award {
+    padding-right: 0.5rem;
+}
+
+.bi-award {
+    color: var(--color-highlight);
+}
+
+
+.education-timeline-degree {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+}
+
+.education-timeline-institution {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.education-timeline-location {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-muted-element);
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.education-timeline-description {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+}
+
+.education-timeline-grade {
+    margin: 1rem 0;
+}
+
+.education-timeline-thesis-container {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--color-muted-border);
+}
+
+.education-timeline-thesis-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.education-timeline-thesis-header p {
+    margin: 0 1rem 0 0;
+    flex: 1;
+}
+
+.education-timeline-thesis-content {
+    padding-top: 1rem;
+}
+
+.education-timeline-chevron {
+    transition: transform 0.2s ease-in-out;
+    flex-shrink: 0;
+}
+
+@media (min-width: 340px) {
+    .education-timeline-degree {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .education-timeline-item {
+        margin: 0 0 3rem 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .education-timeline-dot {
+        left: -29.4px;
+    }
+}
+
+@media (min-width: 992px) {
+    .education-timeline-dot {
+        left: -32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .education-timeline-dot {
+        left: -35px;
+    }
+}
+

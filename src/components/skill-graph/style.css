@@ -1,0 +1,39 @@
+.skill-graph-rating {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.skill-graph-rating p {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.skill-graph-rating img{
+    max-width: 0.9rem;
+}
+
+.skill-graph-bar-chart {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .skill-graph-rating {
+        display: none;
+    }
+
+    .skill-graph-bar-chart {
+        display: block;
+    }
+}
+
+
+@media (min-width: 340px) {
+    .skill-graph-rating p {
+        font-size: 1rem;
+    }
+
+    .skill-graph-rating img{
+        max-width: 1rem;
+    }
+}
