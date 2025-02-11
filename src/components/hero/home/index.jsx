@@ -6,7 +6,7 @@ import imageFhd from './assets/hero-bg-fhd.webp';
 import imageTablet from './assets/hero-bg-tablet.webp';
 import imageMobile from './assets/hero-bg-mobile.jpg';
 import profileImage from './assets/profile.webp';
-import SocialIcons from "../social-icons";
+import SocialIcons from "../../social-icons";
 import { useTranslation } from 'react-i18next';
 
 const Hero = () => {

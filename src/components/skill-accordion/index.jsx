@@ -1,5 +1,5 @@
 import React from "react";
-import SkillArea from "../skill-area";
+import SkillArea from "./skill-area";
 import './style.css';
 
 const SkillAccordion = ({ skillSections, id, className = '' }) => {
