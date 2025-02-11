@@ -24,7 +24,7 @@ const SkillAccordion = ({ skillSections, id, className = '' }) => {
                             <div
                                 id={itemId}
                                 className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`}
-                                data-bs-parent="#skill-accordion"
+                                data-bs-parent={`#${itemId}`}
                             >
                                 <SkillArea
                                     id={`skill-area-${index}`}

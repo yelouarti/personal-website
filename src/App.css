@@ -47,6 +47,18 @@
   color: var(--color-highlight);
 }
 
+.accordion {
+  --bs-accordion-border-color: var(--color-muted-border)
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion {
+  padding: 0;
+}
+
 @media (max-width: 992px) {
   :root {
     --header-height: 4rem;
