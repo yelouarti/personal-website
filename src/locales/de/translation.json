@@ -45,6 +45,37 @@
        "Experte"
      ]
   },
+  "home": {
+    "introduction": {
+      "title": "Darf ich mich vorstellen",
+      "description": "als freiberuflicher Full Stack Developer und IT-Solution Architect bringe ich über 10 Jahre Expertise in der Entwicklung ganzheitlicher Softwarelösungen und Microservice-Architekturen mit. Mein Fokus liegt auf skalierbaren Cloud-Lösungen, wobei Clean Code und nachhaltiges Engineering für mich keine Schlagworte, sondern gelebte Praxis sind. Mit meiner Architekturerfahrung und kommunikativen Stärke bringe ich komplexe Anforderungen effizient auf den Punkt – von der Konzeption bis zur Umsetzung."
+    },
+    "quote": "In der Begrenzung zeigt sich nicht die Einschränkung, sondern die Quelle echter Innovation.",
+    "skillCards": {
+      "experience": {
+        "title": "Erfahrung aus der Praxis",
+        "tagLine": "10+ Jahre, 35+ Microservices, unzählige REST-Schnittstellen"
+      },
+      "communicator": {
+        "title": "Kommunikator",
+        "tagLine": "Übersetzt komplexe Technologie in verständliche Lösungen"
+      },
+      "hybridRoles": {
+        "title": "Hybride Rollen",
+        "tagLine": "Wechselt nahtlos zwischen Architektur-Design und Codezeilen"
+      },
+      "openSource": {
+        "title": "Open Source",
+        "tagLine": "hateoflux – mein Beitrag zur reaktiven Spring-Welt"
+      }
+    },
+    "callToAction": {
+      "title": "Neugierig geworden?",
+      "description": "Ob Beratung, neue Projekte oder einfach nur ein Kennenlernen – kontaktieren Sie mich, und wir finden gemeinsam heraus, wie ich Ihnen weiterhelfen kann.",
+      "contactButton": "Kontakt aufnehmen",
+      "expertiseButton": "Weiter zur Expertise"
+    }
+  },
   "expertise": {
     "h2TechnicalExpertise": "Technische Expertise",
     "technicalExpertiseP1": "Die Komplexität moderner Softwareentwicklung erfordert Spezialisten, die sich in bestimmten Bereichen auszeichnen und gleichzeitig ein ganzheitliches Verständnis der gesamten Entwicklungslandschaft bewahren. In meiner jahrelangen Erfahrung in der Entwicklung von Unternehmenslösungen habe ich ein charakteristisches Expertenprofil entwickelt, das sich durch eine ausgeprägte Backend-Entwicklung und architektonische Gestaltung auszeichnet, ergänzt durch praktische Erfahrung über das gesamte Spektrum der Softwareentwicklung hinweg.",
