@@ -1,0 +1,82 @@
+
+
+.project-phase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.phase-box {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.phase-box-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+}
+
+.phase-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.phase-list li {
+    color: #666;
+    margin-bottom: 0.75rem;
+}
+
+.phase-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+.development-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.development-section {
+    margin-bottom: 4rem;
+}
+
+.development-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.development-description {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.technical-focus {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.technical-focus-title {
+    font-style: italic;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+}
+
+.technical-focus-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.technical-focus-list li {
+    color: #666;
+    margin-bottom: 0.75rem;
+}

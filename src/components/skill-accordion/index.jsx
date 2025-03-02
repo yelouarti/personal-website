@@ -1,5 +1,5 @@
 import React from "react";
-import SkillArea from "../skill-area";
+import SkillArea from "./skill-area";
 import './style.css';
 
 const SkillAccordion = ({ skillSections, id, className = '' }) => {
@@ -24,7 +24,7 @@ const SkillAccordion = ({ skillSections, id, className = '' }) => {
                             <div
                                 id={itemId}
                                 className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`}
-                                data-bs-parent="#skill-accordion"
+                                data-bs-parent={`#${itemId}`}
                             >
                                 <SkillArea
                                     id={`skill-area-${index}`}

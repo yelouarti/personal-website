@@ -15,12 +15,12 @@
     "backToTop": "Nach oben",
     "arrowUpAlt": "Nach oben",
     "aboutMeTitle": "Über mich",
-    "aboutMeText1": "Ich bin Full Stack Developer und IT-Solution Architect. Ich bringe über 10 Jahre Expertise in der Entwicklung ganzheitlicher Softwarelösungen und Microservice-Architekturen mit. Mein Fokus liegt auf skalierbaren Cloud-Lösungen, wobei Clean Code und nachhaltiges Engineering für mich keine Schlagworte, sondern gelebte Praxis sind. Mit meiner Architekturerfahrung und kommunikativen Stärke bringe ich komplexe Anforderungen effizient auf den Punkt – von der Konzeption bis zur Umsetzung.",
+    "aboutMeText1": "Ich bin freiberuflicher Full Stack Developer und IT-Solution Architect. Ich bringe über 10 Jahre Expertise in der Entwicklung ganzheitlicher Softwarelösungen und Microservice-Architekturen mit. Mein Fokus liegt auf skalierbaren Cloud-Lösungen, wobei Clean Code und nachhaltiges Engineering für mich keine Schlagworte, sondern gelebte Praxis sind. Mit meiner Architekturerfahrung und kommunikativen Stärke bringe ich komplexe Anforderungen effizient auf den Punkt – von der Konzeption bis zur Umsetzung.",
     "contactTitle": "Kontakt",
     "emailLabel": "E-Mail",
     "responseTimeLabel": "Bearbeitungsdauer",
-    "responseTime": "E-Mails werden innerhalb von 1-2 Werktagen beantwortet.",
-    "contactPhone": "Für telefonische Kontaktaufnahme bitte ich um vorherige Absprache per E-Mail.",
+    "responseTime": "E-Mails werden noch am selben Tag oder spätestens innerhalb von 1–2 Werktagen beantwortet.",
+    "contactPhone": "Ich freue mich, direkt mit Ihnen telefonisch in Kontakt zu treten. Bitte kontaktieren Sie mich zunächst per E-Mail, damit wir einen passenden Termin vereinbaren können.",
     "languageSwitchLabel": "Deutsch (Deutschland)",
     "globeAlt": "Sprachwechsel",
     "datenschutz": "Datenschutz",
@@ -229,6 +229,92 @@
           "description": "Fundierte Kenntnisse im IT-Service Management nach ITIL Framework, einschließlich Service Strategy, Design, Transition und Operation.",
           "logo": "axelos-logo"
         }
+      ]
+    }
+  },
+  "services": {
+    "serviceOfferings": {
+      "title": "Leistungsspektrum",
+      "text": "Mit langjähriger Erfahrung in Java-Backend-Entwicklung und Solution Architecture bin ich spezialisiert auf die Konzeption resilienter, High-Performance-Systeme für Projekte im Enterprise-Bereich. Ich verbinde fundierte technische Handwerkskunst mit einer nachgewiesenen Erfolgsbilanz in der Entwicklung eleganter, constraint-orientierter Lösungen. Gemeinsam transformieren wir Ihre Vision in eine robuste, skalierbare Realität.",
+      "offerCardData": [
+        {
+          "title": "Backend",
+          "iconName": "code-slash",
+          "valueProposition": [
+            "Entwicklung skalierbarer APIs und event-driven Services",
+            "Migration von Legacy-Systemen zu Cloud-nativen Lösungen",
+            "Konzeption resilienter Datenverarbeitungs-Pipelines"
+          ]
+        },
+        {
+          "title": "Architektur",
+          "iconName": "buildings",
+          "valueProposition": [
+            "Effektive Führung von Entwicklungsteams",
+            "Erstellung von PoCs und Begleitung der technischen Umsetzung",
+            "Entwicklung constraint-getriebener Systemlösungen"
+          ]
+        },
+        {
+          "title": "Test",
+          "iconName": "clipboard-data",
+          "valueProposition": [
+            "Entwicklung automatisierter Teststrategien",
+            "Aufbau komplexer Integrationsumgebungen",
+            "Implementierung automatisierter Performance-Validierung"
+          ]
+        }
+      ]
+    },
+    "collaboration": {
+      "title": "Zusammenarbeit",
+      "text": "Neben technischer Kompetenz basiert erfolgreiche Zusammenarbeit auf klarer Ausrichtung. Hier die Eckpunkte meines idealen Engagements:",
+      "idealProjects": {
+        "title": "Ideale Projekte",
+        "items": [
+          "Moderne Technologie-Stacks oder Systemmodernisierung",
+          "Projekte mit Fokus auf Code-Qualität und Engineering-Standards"
+        ]
+      },
+      "focusAreas": {
+        "title": "Schwerpunktbereiche",
+        "items": [
+          "Nachhaltige und wirkungsorientierte Organisationen",
+          "Digitale Transformation in traditionellen Industrien",
+          "Performance-kritische Anwendungen"
+        ]
+      },
+      "engagementModel": {
+        "title": "Engagement-Modell",
+        "items": [
+          "Vorzugsweise langfristige (6+ Monate) Backend-Systeme oder Architektur-Überarbeitungen",
+          "Tagessätze für Entwicklung und Architektur"
+        ]
+      }
+    },
+    "faq" : {
+      "intro" : "Hier finden Sie Antworten auf häufig gestellte Fragen zu meiner Arbeitsweise und technischen Ausrichtung.",
+      "faqAccordion": [
+          {
+            "title": "Wie sieht es mit Frontend oder DevOps aus?",
+            "content": "Ich verfüge über genügend Kenntnisse, um auch in diesen Bereichen mitzuwirken. Mein Fokus liegt jedoch auf Backend und Architektur. In einer Schnittstellenrolle kann ich bestens unterstützen. Eine Rolle ausschließlich im Frontend oder DevOps entspricht dagegen nicht meinem Kernprofil."
+          },
+          {
+            "title": "Können Sie auch non-Java Stacks?",
+            "content": "Java ist mit Abstand mein wichtigstes Tool, mit dem ich am effizientesten arbeite. Python beherrsche ich ebenfalls solide. Ich arbeite mit mehreren Tools und Sprachen, je nachdem was am besten Sinn macht. Shell und JavaScript sind auch kein Problem. Wenn jedoch ein komplett anderer Stack wie z.B. .NET gefordert ist, bin ich leider nicht der richtige Ansprechpartner."
+          },
+          {
+            "title": "Ab welchem Projektumfang macht eine Zusammenarbeit Sinn?",
+            "content": "Der ideale Projektumfang beginnt bei komplexen Systemen. Typischerweise sind dies Projekte mit einer Laufzeit von mindestens 6 Monaten."
+          },
+          {
+            "title": "Arbeiten Sie auch mit internen Entwicklungsteams zusammen?",
+            "content": "Absolut. Die Zusammenarbeit mit dem bestehenden Team ist sogar essenziell für nachhaltige Systemverbesserungen. Meine Rolle ist es, das Team durch technische Expertise zu unterstützen und gemeinsam die bestmöglichen Ergebnisse zu erzielen."
+          },
+          {
+            "title": "Sind Sie für kurze Einsätze verfügbar?",
+            "content": "Jein. Geht es nur um eine Beratung oder Studie, könnten wir wahrscheinlich ins Gespräch kommen. Wenn jedoch wirklich nur für eine heiße Phase für kurze Zeit jemand zum Anpacken gefragt ist, muss ich leider ablehnen."
+          }
       ]
     }
   }

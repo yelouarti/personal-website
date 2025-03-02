@@ -3,8 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './style.css';
-import Hero from "../../components/hero";
-import SkillsOverviewCard from "../../components/skills-overview-card";
+import Hero from "../../components/hero/home";
+import SkillsOverviewCard from "../../components/overview-card";
 import tenYearsIcon from "./assets/ten-years.svg";
 import bridgeIcon from "./assets/bridge.svg";
 import hateofluxIcon from "./assets/hateoflux.svg";
@@ -19,7 +19,7 @@ const Home = () => {
             <div className="main-container home-container d-flex pt-4 justify-content-center flex-column">
                 <h2>Darf ich mich vorstellen</h2>
                 <p>
-                    als Full Stack Developer und IT-Solution Architect bringe ich über 10 Jahre Expertise in der
+                    als freiberuflicher Full Stack Developer und IT-Solution Architect bringe ich über 10 Jahre Expertise in der
                     Entwicklung ganzheitlicher Softwarelösungen und Microservice-Architekturen mit. Mein Fokus liegt auf
                     skalierbaren Cloud-Lösungen, wobei Clean Code und nachhaltiges Engineering für mich keine
                     Schlagworte, sondern gelebte Praxis sind. Mit meiner Architekturerfahrung und kommunikativen Stärke

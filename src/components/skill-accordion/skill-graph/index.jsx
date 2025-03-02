@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './style.css';
 import { ResponsiveBar } from '@nivo/bar'
 import {useTranslation} from "react-i18next";
-import CircleRating from "../circle-rating";
+import CircleRating from "../../circle-rating";
 
 
 
