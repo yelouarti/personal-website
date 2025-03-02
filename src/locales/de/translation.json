@@ -317,5 +317,33 @@
           }
       ]
     }
+  },
+  "contact": {
+    "title": "Lassen sie uns ins Gespräch kommen",
+    "introduction": "Sie planen ein neues IT-Projekt oder suchen technische Expertise für bestehende Systeme? Ich unterstütze Sie mit maßgeschneiderten Lösungen für nachhaltige und skalierbare Architekturen.",
+    "emailButton": "Jetzt E-Mail schreiben",
+    "contactDetails": {
+      "email": {
+        "title": "E-Mail",
+        "value": "contact@elouarti.net"
+      },
+      "processingTime": {
+        "title": "Bearbeitungsdauer",
+        "description": "E-Mails werden noch am selben Tag oder spätestens innerhalb von 1-2 Werktagen beantwortet."
+      },
+      "phone": {
+        "title": "Telefonischer Kontakt",
+        "description": "Ich freue mich, direkt mit Ihnen telefonisch in Kontakt zu treten. Bitte kontaktieren Sie mich zunächst per E-Mail, damit wir einen passenden Termin vereinbaren können."
+      }
+    },
+    "expertise": {
+      "title": "Spezialisiert auf skalierbare Architekturen",
+      "description1": "Mit über 10 Jahren Expertise bringe ich Ihre IT-Anforderungen effizient auf den Punkt – von der Konzeption bis zur nachhaltigen Umsetzung komplexer Systeme.",
+      "description2": "Ideal für Projekte mit Cloud-Lösungen, Microservices und langfristiger technischer Ausrichtung. Kontaktieren Sie mich für eine unverbindliche Ersteinschätzung."
+    },
+    "links": {
+      "services": "Leistungsübersicht und FAQ",
+      "expertise": "Expertise"
+    }
   }
 }

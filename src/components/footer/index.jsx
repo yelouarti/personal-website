@@ -17,7 +17,7 @@ const Footer = () => {
     useEffect(() => {
         const handleScroll = () => {
             // Show button when user scrolls down 100px from the top
-            const scrolled = window.scrollY > 100;
+            const scrolled = window.scrollY > 50;
             setShowButton(scrolled);
         };
 

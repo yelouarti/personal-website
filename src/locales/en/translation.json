@@ -317,5 +317,33 @@
         }
       ]
     }
+  },
+  "contact": {
+    "title": "Let's get in touch",
+    "introduction": "Are you planning a new IT project or seeking technical expertise for existing systems? I support you with tailored solutions for sustainable and scalable architectures.",
+    "emailButton": "Send an email now",
+    "contactDetails": {
+      "email": {
+        "title": "Email",
+        "value": "contact@elouarti.net"
+      },
+      "processingTime": {
+        "title": "Response Time",
+        "description": "Emails are answered on the same day or within 1-2 business days at the latest."
+      },
+      "phone": {
+        "title": "Phone Contact",
+        "description": "I look forward to speaking with you directly by phone. Please contact me by email first so we can arrange a suitable appointment."
+      }
+    },
+    "expertise": {
+      "title": "Specialized in scalable architectures",
+      "description1": "With over 10 years of expertise, I efficiently bring your IT requirements to the point - from conception to sustainable implementation of complex systems.",
+      "description2": "Ideal for projects with cloud solutions, microservices, and long-term technical orientation. Contact me for a non-binding initial assessment."
+    },
+    "links": {
+      "services": "Services overview and FAQ",
+      "expertise": "Expertise"
+    }
   }
 }

@@ -38,7 +38,9 @@
   background-color: var(--color-highlight);
   color: white;
   border: none;
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-align: center;
 }
 
 .muted-btn {
@@ -59,14 +61,29 @@
   padding: 0;
 }
 
+.link-primary {
+  color: var(--color-link-color);
+  text-decoration: none;
+}
+
+.link-primary:hover {
+  color: var(--color-link-hover-color);
+}
+
+
 @media (max-width: 992px) {
   :root {
     --header-height: 4rem;
   }
+
 }
 
 @media (max-width: 576px) {
   .main-container {
     padding: 0 1.75rem;
+  }
+
+  .std-btn {
+    padding: 1rem 1.5rem;
   }
 }

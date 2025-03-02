@@ -11,7 +11,7 @@ const OfferCard = ({ iconName, title, valueProps, className = '', id }) => {
             <div className="value-props d-flex flex-column align-items-start gap-3 mt-1">
                 {valueProps.map((prop, index) => (
                     <div key={index} className="d-flex justify-content-start">
-                        <i className="bi bi-check-lg check-icon me-3 mt-1"></i>
+                        <i className="bi d-flex bi-check-lg check-icon me-3 mt-1"></i>
                         <span>{prop}</span>
                     </div>
                 ))}
