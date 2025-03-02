@@ -44,6 +44,37 @@
       "Expert"
     ]
   },
+  "home": {
+    "introduction": {
+      "title": "Let me introduce myself",
+      "description": "as a freelance Full Stack Developer and IT Solution Architect, I bring over 10 years of expertise in developing holistic software solutions and microservice architectures. My focus is on scalable cloud solutions, where clean code and sustainable engineering are not just buzzwords but practiced principles. With my architectural experience and communicative strength, I efficiently bring complex requirements to the point – from conception to implementation."
+    },
+    "quote": "Limitation reveals not restriction, but the source of true innovation.",
+    "skillCards": {
+      "experience": {
+        "title": "Practical Experience",
+        "tagLine": "10+ years, 35+ microservices, countless REST interfaces"
+      },
+      "communicator": {
+        "title": "Communicator",
+        "tagLine": "Translates complex technology into understandable solutions"
+      },
+      "hybridRoles": {
+        "title": "Hybrid Roles",
+        "tagLine": "Seamlessly switches between architecture design and code lines"
+      },
+      "openSource": {
+        "title": "Open Source",
+        "tagLine": "hateoflux – my contribution to the reactive Spring world"
+      }
+    },
+    "callToAction": {
+      "title": "Curious to learn more?",
+      "description": "Whether for consultation, new projects, or simply getting to know each other – contact me, and together we'll find out how I can help you.",
+      "contactButton": "Get in touch",
+      "expertiseButton": "View my expertise"
+    }
+  },
   "expertise": {
     "h2TechnicalExpertise": "Technical Expertise",
     "technicalExpertiseP1": "The complexity of modern software development requires specialists who excel in specific areas while maintaining a holistic understanding of the entire development landscape. In my years of experience in developing enterprise solutions, I have developed a distinctive expert profile characterized by strong backend development and architectural design, complemented by practical experience across the entire spectrum of software development.",
@@ -316,6 +347,34 @@
           "content": "Yes and no. If it's just about consulting or a study, we could probably have a conversation. However, if someone is really only needed for a short time during a hot phase, I must decline."
         }
       ]
+    }
+  },
+  "contact": {
+    "title": "Let's get in touch",
+    "introduction": "Are you planning a new IT project or seeking technical expertise for existing systems? I support you with tailored solutions for sustainable and scalable architectures.",
+    "emailButton": "Send an email now",
+    "contactDetails": {
+      "email": {
+        "title": "Email",
+        "value": "contact@elouarti.net"
+      },
+      "processingTime": {
+        "title": "Response Time",
+        "description": "Emails are answered on the same day or within 1-2 business days at the latest."
+      },
+      "phone": {
+        "title": "Phone Contact",
+        "description": "I look forward to speaking with you directly by phone. Please contact me by email first so we can arrange a suitable appointment."
+      }
+    },
+    "expertise": {
+      "title": "Specialized in scalable architectures",
+      "description1": "With over 10 years of expertise, I efficiently bring your IT requirements to the point - from conception to sustainable implementation of complex systems.",
+      "description2": "Ideal for projects with cloud solutions, microservices, and long-term technical orientation. Contact me for a non-binding initial assessment."
+    },
+    "links": {
+      "services": "Services overview and FAQ",
+      "expertise": "Expertise"
     }
   }
 }
