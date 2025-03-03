@@ -17,12 +17,6 @@ const Header = () => {
     const {language: currentLanguage, switchLanguage} = useContext(LanguageContext);
     const isVisible = useScrollDirection();
 
-    // Toggle function to switch between 'de' and 'en'
-    const toggleLanguage = () => {
-        const newLanguage = currentLanguage === 'de' ? 'en' : 'de';
-        switchLanguage(newLanguage);
-    };
-
     // Function to close the offcanvas menu
     const closeOffcanvas = () => {
         const offcanvasElement = document.getElementById('mainNavbar');
@@ -41,6 +35,14 @@ const Header = () => {
                 }
             }
         }
+    };
+
+    // Toggle function to switch between 'de' and 'en' and close the menu
+    const toggleLanguage = () => {
+        const newLanguage = currentLanguage === 'de' ? 'en' : 'de';
+        switchLanguage(newLanguage);
+        // Close the offcanvas menu after language switch
+        closeOffcanvas();
     };
 
     useEffect(() => {
