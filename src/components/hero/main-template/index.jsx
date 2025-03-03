@@ -18,7 +18,7 @@ const MainTemplateHero = ({
                 color: textColor || '#212529'
             }}
         >
-            <div className="main-container w-100 px-5">
+            <div className="main-container w-100">
                 <div className="hero-content-row">
                     <div className="hero-text-column">
                         <h1 className="hero-title m-0">{title}</h1>

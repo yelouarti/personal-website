@@ -15,7 +15,7 @@
 
 .hero-text-column,
 .hero-image-column {
-    height: calc(350px / 2); /* Each column takes exactly half of the hero height */
+    height: calc(350px / 2);
 }
 
 .hero-text-column {
@@ -29,13 +29,11 @@
 
 .hero-title {
     font-weight: bold;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
 }
 
 .hero-tagline {
     font-size: 1.25rem;
-    padding-top: 0.75rem;
+    padding-top: 0.5rem;
 }
 
 .hero-image-column {
@@ -89,16 +87,16 @@
     .hero-text-column {
         width: 50%;
         text-align: left;
-        height: auto; /* Let content determine height */
+        height: auto;
     }
 
     .hero-image-column {
         width: 50%;
         justify-content: flex-end;
-        height: auto; /* Let content determine height */
+        height: auto;
     }
 
     .hero-image {
-        max-height: 550px; /* Maximum height on desktop */
+        max-height: 550px;
     }
 }

@@ -19,9 +19,12 @@ const Expertise = () => {
     const certificationSection = t('expertise.certifications.cards', { returnObjects: true });
     return (
         <div>
-            <MainTemplateHero title="Expertise"
-                              tagline="Lorem impsum dolor asit amit"
-                              image={spiderChartBig}></MainTemplateHero>
+            <MainTemplateHero title={t("expertise.hero.title")}
+                              tagline={t("expertise.hero.tagline")}
+                              image={spiderChartBig}
+                              backgroundColor="#3A5199"
+                              textColor="#FFFFFF"
+            />
             <div className="main-container">
                 <h2>{t("expertise.h2TechnicalExpertise")}</h2>
                 <div id="technical-expertise" className="d-flex flex-column align-items-center">
