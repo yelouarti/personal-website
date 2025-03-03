@@ -19,19 +19,19 @@ const MainTemplateHero = ({
             }}
         >
             <div className="main-container w-100 px-5">
-                <Row className="hero-content-row">
-                    <Col xs={12} lg={6} className="hero-text-column">
-                        <h1 className="hero-title">{title}</h1>
-                        <p className="hero-tagline">{tagline}</p>
-                    </Col>
-                    <Col xs={12} lg={6} className="hero-image-column">
+                <div className="hero-content-row">
+                    <div className="hero-text-column">
+                        <h1 className="hero-title m-0">{title}</h1>
+                        <p className="hero-tagline m-0">{tagline}</p>
+                    </div>
+                    <div className="hero-image-column">
                         <img
                             src={image}
                             alt={title}
                             className="hero-image"
                         />
-                    </Col>
-                </Row>
+                    </div>
+                </div>
             </div>
         </div>
     );

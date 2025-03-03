@@ -1,17 +1,30 @@
+/* Base styles (mobile first) */
 .main-template-hero {
     width: 100%;
-    min-height: 350px;
+    max-height: 350px;
     display: flex;
     align-items: center;
+    overflow: visible;
 }
 
 .hero-content-row {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text-column,
+.hero-image-column {
+    height: calc(350px / 2); /* Each column takes exactly half of the hero height */
 }
 
 .hero-text-column {
     text-align: center;
-    padding: 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .hero-title {
@@ -22,47 +35,70 @@
 
 .hero-tagline {
     font-size: 1.25rem;
-    opacity: 0.9;
+    padding-top: 0.75rem;
 }
 
 .hero-image-column {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .hero-image {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-/* Responsive height adjustments */
+/* Small devices (576px and up) */
 @media (min-width: 576px) {
     .main-template-hero {
-        min-height: 400px;
+        max-height: 400px;
+    }
+
+    .hero-text-column,
+    .hero-image-column {
+        height: calc(400px / 2);
     }
 }
 
+/* Medium devices (811px and up) */
 @media (min-width: 811px) {
     .main-template-hero {
-        min-height: 500px;
+        max-height: 500px;
+    }
+
+    .hero-text-column,
+    .hero-image-column {
+        height: calc(500px / 2);
     }
 }
 
+/* Large devices (996px and up) */
 @media (min-width: 996px) {
     .main-template-hero {
-        min-height: 550px;
+        max-height: 550px;
+    }
+
+    .hero-content-row {
+        flex-direction: row;
     }
 
     .hero-text-column {
+        width: 50%;
         text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        height: auto; /* Let content determine height */
     }
 
     .hero-image-column {
-        justify-content: end;
+        width: 50%;
+        justify-content: flex-end;
+        height: auto; /* Let content determine height */
+    }
+
+    .hero-image {
+        max-height: 550px; /* Maximum height on desktop */
     }
 }
