@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 * removed "projects" for now
+* side menu no closes when item is selected 
 
 
 ## [0.7.0]
