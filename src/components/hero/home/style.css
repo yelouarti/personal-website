@@ -31,6 +31,9 @@
     align-items: center;
 }
 
+.availability-badge {
+}
+
 #profile-image {
     margin-top: 75px;
     width: 150px;
@@ -43,6 +46,22 @@
     font-weight: bold;
     margin: 16px 0 0 0;
 }
+
+.name-badge-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+}
+
+.name-badge-container .availability-badge-container {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
 
 #hhc-role {
     font-size: 13px;
@@ -85,6 +104,18 @@
     .home-hero-content .col.d-flex {
         align-items: flex-start;
         justify-content: center;
+    }
+
+    .name-badge-container {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .name-badge-container .availability-badge-container {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .social-icons--hero {

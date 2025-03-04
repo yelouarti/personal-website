@@ -1,0 +1,29 @@
+.availability-badge {
+    padding: 1px 8px 1px 4px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 11px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+}
+
+.availability-badge-container .availability-badge{
+    display: flex;
+    flex-direction: row;
+}
+
+.availability-badge-open {
+    background-color: #049D1E;
+    color: white;
+}
+
+.availability-badge-consultation {
+    background-color: #F59E0B;
+    color: white;
+}
+
+.availability-badge i {
+    font-size: 12px;
+    margin: 0 6px 0 3px;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import image4k from './assets/hero-bg-4k.webp';
 import image2k from './assets/hero-bg-2k.webp';
@@ -8,10 +8,24 @@ import imageTablet from './assets/hero-bg-tablet.webp';
 import imageMobile from './assets/hero-bg-mobile.jpg';
 import profileImage from './assets/profile.webp';
 import SocialIcons from "../../social-icons";
+import AvailabilityBadge from "../../availability-badge";
 import { useTranslation } from 'react-i18next';
 
 const HomeHero = () => {
     const {t} = useTranslation();
+    const [endDateOfCurrentProject, setEndDateOfCurrentProject] = useState(null);
+
+    // Fetch the project end date from the external configuration file
+    useEffect(() => {
+        fetch('/config/values.json')
+            .then(response => response.json())
+            .then(data => {
+                setEndDateOfCurrentProject(data.endDateOfCurrentProject);
+            })
+            .catch(error => {
+                console.error('Error loading project dates configuration:', error);
+            });
+    }, []);
 
     return (<div className="home-hero-container">
             <picture className="col" id="home-hero-background">
@@ -32,7 +46,10 @@ const HomeHero = () => {
 
                     {/*info*/}
                     <div className="col d-flex flex-column">
-                        <h1 id="hhc-name">Younes El Ouarti</h1>
+                        <div className="name-badge-container">
+                            <h1 id="hhc-name">Younes El Ouarti</h1>
+                            <AvailabilityBadge endDateOfCurrentProject={endDateOfCurrentProject} />
+                        </div>
                         <p id="hhc-role">Full Stack Developer · IT-Solution Architect</p>
                         <p id="hhc-location">{t('hero.location')}</p>
                         <SocialIcons classNamePostfix="hero flex-row"/>
