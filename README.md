@@ -1,3 +1,15 @@
+# elouarti.net
+
+## Configuration
+
+Use the file under `public/config/values`
+
+| Name | Format                   | Description                                                                                                                                                |
+|------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `endDateOfCurrentProject`     | YYYY-MM-DDT00:00:00.000Z | Controls the availability badge on the home page. Please specify the end of the current project. The badge will render color, text and tooltip accordingly |
+
+
+_____
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
