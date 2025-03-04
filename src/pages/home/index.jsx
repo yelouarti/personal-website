@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './style.css';
-import Hero from "../../components/hero/home";
+import HomeHero from "../../components/hero/home";
 import SkillsOverviewCard from "../../components/overview-card";
 import tenYearsIcon from "./assets/ten-years.svg";
 import bridgeIcon from "./assets/bridge.svg";
@@ -17,7 +17,7 @@ const Home = () => {
 
     return (
         <div>
-            <Hero />
+            <HomeHero />
             <div className="main-container home-container d-flex pt-4 justify-content-center flex-column">
                 <h2>{t('home.introduction.title')}</h2>
                 <p>

@@ -77,6 +77,10 @@
     }
   },
   "expertise": {
+    "hero": {
+      "title": "Meine Kompetenzen",
+      "tagline": "Mehrere Werkzeuge, ein Experte."
+    },
     "h2TechnicalExpertise": "Technische Expertise",
     "technicalExpertiseP1": "Die Komplexität moderner Softwareentwicklung erfordert Spezialisten, die sich in bestimmten Bereichen auszeichnen und gleichzeitig ein ganzheitliches Verständnis der gesamten Entwicklungslandschaft bewahren. In meiner jahrelangen Erfahrung in der Entwicklung von Unternehmenslösungen habe ich ein charakteristisches Expertenprofil entwickelt, das sich durch eine ausgeprägte Backend-Entwicklung und architektonische Gestaltung auszeichnet, ergänzt durch praktische Erfahrung über das gesamte Spektrum der Softwareentwicklung hinweg.",
     "technicalExpertiseP2": "Diese Visualisierung zeigt mein technisches Profil in fünf Schlüsseldimensionen der Softwareentwicklung. Mein stärkstes Fundament liegt in der Backend-Entwicklung, wo ich zahlreiche Microservices mit Java und Spring konzipiert und implementiert habe. Dies wird ergänzt durch meine architektonische Expertise, die ich sowohl als praktischer Entwickler als auch als Lösungsarchitekt in großen Projekten eingebracht habe. Im Bereich Testing spiegelt sich meine jahrelange Erfahrung in der Implementierung umfassender Teststrategien wider - von Unit-Tests bis hin zu systemweiten Performance-Tests. Meine DevOps-Kenntnisse habe ich kontinuierlich parallel zur Backend-Entwicklung und Architekturarbeit aufgebaut und praktisch eingesetzt, wobei ich routiniert mit Technologien wie Docker, Kubernetes und Helm arbeite. Im Frontend-Bereich habe ich bereits eigenständige Projekte mit Angular und React erfolgreich umgesetzt.",
@@ -264,6 +268,10 @@
     }
   },
   "services": {
+    "hero": {
+      "title": "Zusammenarbeit",
+      "tagline": "Ihre Vision, meine Expertise."
+    },
     "serviceOfferings": {
       "title": "Leistungsspektrum",
       "text": "Mit langjähriger Erfahrung in Java-Backend-Entwicklung und Solution Architecture bin ich spezialisiert auf die Konzeption resilienter, High-Performance-Systeme für Projekte im Enterprise-Bereich. Ich verbinde fundierte technische Handwerkskunst mit einer nachgewiesenen Erfolgsbilanz in der Entwicklung eleganter, constraint-orientierter Lösungen. Gemeinsam transformieren wir Ihre Vision in eine robuste, skalierbare Realität.",
@@ -350,6 +358,10 @@
     }
   },
   "contact": {
+    "hero": {
+      "title": "Kontakt aufnehmen",
+      "tagline": "Ihr Projekt beginnt mit einem _„Hallo!“_"
+    },
     "title": "Lassen sie uns ins Gespräch kommen",
     "introduction": "Sie planen ein neues IT-Projekt oder suchen technische Expertise für bestehende Systeme? Ich unterstütze Sie mit maßgeschneiderten Lösungen für nachhaltige und skalierbare Architekturen.",
     "emailButton": "Jetzt E-Mail schreiben",

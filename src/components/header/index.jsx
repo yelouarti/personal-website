@@ -1,5 +1,6 @@
 import React, {useContext, useState, useEffect} from 'react';
 import './style.css';
+import * as bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import logo from './assets/logo.svg';
@@ -16,10 +17,32 @@ const Header = () => {
     const {language: currentLanguage, switchLanguage} = useContext(LanguageContext);
     const isVisible = useScrollDirection();
 
-    // Toggle function to switch between 'de' and 'en'
+    // Function to close the offcanvas menu
+    const closeOffcanvas = () => {
+        const offcanvasElement = document.getElementById('mainNavbar');
+        if (offcanvasElement) {
+            const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+            if (offcanvasInstance) {
+                offcanvasInstance.hide();
+
+                // Also remove the backdrop manually
+                const backdrop = document.querySelector('.offcanvas-backdrop');
+                if (backdrop) {
+                    backdrop.classList.remove('show');
+                    setTimeout(() => {
+                        backdrop.remove();
+                    }, 300); // Wait for fade-out transition
+                }
+            }
+        }
+    };
+
+    // Toggle function to switch between 'de' and 'en' and close the menu
     const toggleLanguage = () => {
         const newLanguage = currentLanguage === 'de' ? 'en' : 'de';
         switchLanguage(newLanguage);
+        // Close the offcanvas menu after language switch
+        closeOffcanvas();
     };
 
     useEffect(() => {
@@ -79,6 +102,7 @@ const Header = () => {
                                 <Link
                                     className={`nav-link ${location.pathname === '/expertise' ? 'nav-link-active' : ''}`}
                                     to="/expertise"
+                                    onClick={closeOffcanvas}
                                 >
                                     {t('header.expertise')}
                                 </Link>
@@ -87,22 +111,23 @@ const Header = () => {
                                 <Link
                                     className={`nav-link ${location.pathname === '/services' ? 'nav-link-active' : ''}`}
                                     to="/services"
+                                    onClick={closeOffcanvas}
                                 >
                                     {t('header.services')}
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link
-                                    className={`nav-link ${location.pathname === '/projects' ? 'nav-link-active' : ''}`}
-                                    to="/projects"
-                                >
-                                    {t('header.projects')}
-                                </Link>
+                                {/*<Link*/}
+                                {/*    className={`nav-link ${location.pathname === '/projects' ? 'nav-link-active' : ''}`}*/}
+                                {/*    to="/projects"*/}
+                                {/*>*/}
+                                {/*    {t('header.projects')}*/}
+                                {/*</Link>*/}
                             </li>
                             <li className="nav-item">
                                 <Link
                                     to="/contact"
-
+                                    onClick={closeOffcanvas}
                                 >
                                     <button className={location.pathname === '/contact' ? 'nav-link-active' : 'contact-btn'}>
                                         {t('header.contact')}

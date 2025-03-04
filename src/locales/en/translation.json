@@ -76,6 +76,10 @@
     }
   },
   "expertise": {
+    "hero": {
+      "title": "My Toolkit",
+      "tagline": "Multiple tools, one expert."
+    },
     "h2TechnicalExpertise": "Technical Expertise",
     "technicalExpertiseP1": "The complexity of modern software development requires specialists who excel in specific areas while maintaining a holistic understanding of the entire development landscape. In my years of experience in developing enterprise solutions, I have developed a distinctive expert profile characterized by strong backend development and architectural design, complemented by practical experience across the entire spectrum of software development.",
     "technicalExpertiseP2": "This visualization showcases my technical profile across five key dimensions of software development. My strongest foundation lies in backend development, where I have designed and implemented numerous microservices using Java and Spring. This is complemented by my architectural expertise, which I have contributed both as a hands-on developer and as a solution architect in large projects. In the area of testing, my years of experience in implementing comprehensive testing strategies are reflected—from unit tests to system-wide performance tests. I have continuously built and practically applied my DevOps skills alongside backend development and architectural work, routinely working with technologies such as Docker, Kubernetes, and Helm. In the frontend domain, I have successfully executed independent projects using Angular and React.",
@@ -265,6 +269,10 @@
   },
   "services": {
     "serviceOfferings": {
+      "hero": {
+        "title": "Solutions",
+        "tagline": "Your vision, my expertise."
+      },
       "title": "Service Offerings",
       "text": "With years of experience in Java backend development and solution architecture, I specialize in designing resilient, high-performance systems for enterprise-level projects. I combine solid technical craftsmanship with a proven track record in developing elegant, constraint-oriented solutions. Together, we transform your vision into a robust, scalable reality.",
       "offerCardData": [
@@ -350,6 +358,10 @@
     }
   },
   "contact": {
+    "hero": {
+      "title": "Get in Touch",
+      "tagline": "Your project starts with _\"hello!\"_"
+    },
     "title": "Let's get in touch",
     "introduction": "Are you planning a new IT project or seeking technical expertise for existing systems? I support you with tailored solutions for sustainable and scalable architectures.",
     "emailButton": "Send an email now",

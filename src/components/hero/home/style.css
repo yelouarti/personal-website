@@ -1,4 +1,4 @@
-.hero-container {
+.home-hero-container {
     width: 100%;
     height: 150px;
     position: relative;
@@ -9,7 +9,7 @@
 }
 
 /* Background */
-#hero-background * {
+#home-hero-background * {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -20,13 +20,13 @@
 }
 
 /* Hero Content */
-.hero-content {
+.home-hero-content {
     height: 100%;
     position: relative;
     z-index: 2;
 }
 
-.hero-content div {
+.home-hero-content div {
     flex-direction: column;
     align-items: center;
 }
@@ -38,18 +38,18 @@
     border-radius: 1000px;
 }
 
-#hc-name {
+#hhc-name {
     font-size: 20px;
     font-weight: bold;
     margin: 16px 0 0 0;
 }
 
-#hc-role {
+#hhc-role {
     font-size: 13px;
     margin: 5px 0 0 0;
 }
 
-#hc-location {
+#hhc-location {
     font-size: 12px;
     margin: 5px 0 0 0;
 }
@@ -66,23 +66,23 @@
 
 /*811px-1300px Tablet*/
 @media (min-width: 811px) {
-    .hero-container {
+    .home-hero-container {
         height: 240px;
         /* "business card" is now within the container, no need to push the margin down*/
         margin-bottom: 0;
     }
 
-    .hero-content > div {
+    .home-hero-content > div {
         height: 100%;
     }
 
-    .hero-content div {
+    .home-hero-content div {
         flex-direction: row;
         align-items: center;
     }
 
     /* Workaround to align the text column to the left */
-    .hero-content .col.d-flex {
+    .home-hero-content .col.d-flex {
         align-items: flex-start;
         justify-content: center;
     }
@@ -92,7 +92,7 @@
         gap: 25px;
     }
 
-    #hero-background * {
+    #home-hero-background * {
         object-fit: none;
         object-position: right;
     }
@@ -101,17 +101,17 @@
         margin-top: 0;
     }
 
-    #hc-name {
+    #hhc-name {
         margin: 0;
     }
 }
 
 @media (min-width: 340px) {
-    #hc-role {
+    #hhc-role {
         font-size: 14px;
     }
 
-    #hc-location {
+    #hhc-location {
         font-size: 13px;
     }
 }
@@ -124,20 +124,20 @@
         height: 277px;
     }
 
-    .hero-container {
+    .home-hero-container {
         height: 475px;
     }
 
-    #hc-name {
+    #hhc-name {
         font-size: 24px;
     }
 
-    #hc-role {
+    #hhc-role {
         font-size: 18px;
         margin-top: 9px;
     }
 
-    #hc-location {
+    #hhc-location {
         font-size: 17px;
         margin-top: 9px;
     }
@@ -150,7 +150,7 @@
 
 /*1921px-3840px 2k/4k and beyond*/
 @media (min-width: 1921px) {
-    .hero-container {
+    .home-hero-container {
         height: 620px;
     }
 }

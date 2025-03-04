@@ -3,26 +3,27 @@ import './style.css';
 import image4k from './assets/hero-bg-4k.webp';
 import image2k from './assets/hero-bg-2k.webp';
 import imageFhd from './assets/hero-bg-fhd.webp';
+import imageHd from './assets/hero-bg-hd.webp';
 import imageTablet from './assets/hero-bg-tablet.webp';
 import imageMobile from './assets/hero-bg-mobile.jpg';
 import profileImage from './assets/profile.webp';
 import SocialIcons from "../../social-icons";
 import { useTranslation } from 'react-i18next';
 
-const Hero = () => {
+const HomeHero = () => {
     const {t} = useTranslation();
 
-    return (<div className="hero-container">
-            <picture className="col" id="hero-background">
+    return (<div className="home-hero-container">
+            <picture className="col" id="home-hero-background">
                 <source media="(min-width: 3840px)" srcSet={image4k}/>
                 <source media="(min-width: 1921px)" srcSet={image2k}/>
                 <source media="(min-width: 1301px)" srcSet={imageFhd}/>
-                {/*TODO need one for 996-1301*/}
+                <source media="(min-width: 996px)" srcSet={imageHd}/>
                 <source media="(min-width: 811px)" srcSet={imageTablet}/>
-                <img src={imageMobile} alt="Hero"/>
+                <img src={imageMobile} alt="Clean Desk"/>
             </picture>
 
-            <div className="hero-content main-container">
+            <div className="home-hero-content main-container">
                 <div className="row d-flex">
                     {/*profile image*/}
                     <div className="col-auto">
@@ -31,9 +32,9 @@ const Hero = () => {
 
                     {/*info*/}
                     <div className="col d-flex flex-column">
-                        <h1 id="hc-name">Younes El Ouarti</h1>
-                        <p id="hc-role">Full Stack Developer · IT-Solution Architect</p>
-                        <p id="hc-location">{t('hero.location')}</p>
+                        <h1 id="hhc-name">Younes El Ouarti</h1>
+                        <p id="hhc-role">Full Stack Developer · IT-Solution Architect</p>
+                        <p id="hhc-location">{t('hero.location')}</p>
                         <SocialIcons classNamePostfix="hero flex-row"/>
                     </div>
                 </div>
@@ -42,4 +43,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default HomeHero;

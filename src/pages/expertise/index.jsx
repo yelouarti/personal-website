@@ -8,6 +8,7 @@ import {useTranslation} from "react-i18next";
 import EducationTimeline from "../../components/education-timeline";
 import Certificates from "../../components/certificates";
 import SkillAccordion from "../../components/skill-accordion";
+import MainTemplateHero from "../../components/hero/main-template";
 
 
 const Expertise = () => {
@@ -17,47 +18,55 @@ const Expertise = () => {
     const educationSection = t('expertise.education.degrees', { returnObjects: true });
     const certificationSection = t('expertise.certifications.cards', { returnObjects: true });
     return (
-        <div className="main-container">
-            <h2>{t("expertise.h2TechnicalExpertise")}</h2>
-            <div id="technical-expertise" className="d-flex flex-column align-items-center">
-                <p>
-                    {t("expertise.technicalExpertiseP1")}
-                </p>
-                <picture className="content-section-inter-spacer" id="skill-spider-chart">
-                    <source media="(min-width: 768px)" srcSet={spiderChartBig}/>
-                    <img src={spiderChartSmall} alt="Spider chart with skill areas"/>
-                </picture>
+        <div>
+            <MainTemplateHero title={t("expertise.hero.title")}
+                              tagline={t("expertise.hero.tagline")}
+                              image={spiderChartBig}
+                              backgroundColor="#3A5199"
+                              textColor="#FFFFFF"
+            />
+            <div className="main-container">
+                <h2>{t("expertise.h2TechnicalExpertise")}</h2>
+                <div id="technical-expertise" className="d-flex flex-column align-items-center">
+                    <p>
+                        {t("expertise.technicalExpertiseP1")}
+                    </p>
+                    <picture className="content-section-inter-spacer" id="skill-spider-chart">
+                        <source media="(min-width: 768px)" srcSet={spiderChartBig}/>
+                        <img src={spiderChartSmall} alt="Spider chart with skill areas"/>
+                    </picture>
 
-                <p className="content-section-inter-spacer">
-                    {t("expertise.technicalExpertiseP2")}
-                </p>
-                <p>
-                    {t("expertise.technicalExpertiseP3")}
-                </p>
+                    <p className="content-section-inter-spacer">
+                        {t("expertise.technicalExpertiseP2")}
+                    </p>
+                    <p>
+                        {t("expertise.technicalExpertiseP3")}
+                    </p>
 
-                <SkillAccordion
-                    skillSections={skillSections}
-                    id="skill-accordion-section"
+                    <SkillAccordion
+                        skillSections={skillSections}
+                        id="skill-accordion-section"
+                        className="content-section-inter-spacer"
+                    />
+
+                </div>
+
+                <h2 className="content-section-spacer">{t("expertise.h2Education")}</h2>
+                <p>{t("expertise.education.introduction")}</p>
+                <EducationTimeline
+                    data={educationSection}
+                    id="education-section"
                     className="content-section-inter-spacer"
                 />
 
+                <h2 className="content-section-spacer pt-4">{t("expertise.h2Certification")}</h2>
+                <p>{t("expertise.certifications.introduction")}</p>
+                <Certificates
+                    certifications={certificationSection}
+                    id="certification-section"
+                    className="content-section-inter-spacer"
+                />
             </div>
-
-            <h2 className="content-section-spacer">{t("expertise.h2Education")}</h2>
-            <p>{t("expertise.education.introduction")}</p>
-            <EducationTimeline
-                data={educationSection}
-                id="education-section"
-                className="content-section-inter-spacer"
-            />
-
-            <h2 className="content-section-spacer pt-4">{t("expertise.h2Certification")}</h2>
-            <p>{t("expertise.certifications.introduction")}</p>
-            <Certificates
-                certifications={certificationSection}
-                id="certification-section"
-                className="content-section-inter-spacer"
-            />
         </div>
     );
 }

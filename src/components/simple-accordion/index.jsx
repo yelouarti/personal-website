@@ -24,7 +24,7 @@ const SimpleAccordion = ({
                                 aria-expanded={isExpanded ? 'true' : 'false'}
                                 aria-controls={itemId}
                             >
-                                <h3 className="m-0">{titleContentPair.title}</h3>
+                                <h3 className="m-0 pe-3">{titleContentPair.title}</h3>
                             </button>
                         </div>
                         <div
