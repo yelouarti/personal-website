@@ -45,6 +45,16 @@
        "Experte"
      ]
   },
+  "availabilityBadge": {
+    "openForProjects": "Offen für Projekte",
+    "openForProjectsStarting": "Offen für Projekte ab {{month}} {{year}}",
+    "consultationOnly": "Nur Beratung bis Ende {{month}} {{year}}",
+    "tooltips": {
+      "openForProjects": "Ich bin aktuell für neue Projekte und Beratungen verfügbar.",
+      "openForProjectsStarting": "Ich bin ab {{month}} {{year}} wieder für neue Projekte verfügbar. Beratungen sind jederzeit möglich.",
+      "consultationOnly": "Leider kann ich bis Ende {{month}} {{year}} keine neuen Projekte annehmen. Beratungen sind jedoch jederzeit möglich."
+    }
+  },
   "home": {
     "introduction": {
       "title": "Darf ich mich vorstellen",

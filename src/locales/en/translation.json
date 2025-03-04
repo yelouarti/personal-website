@@ -44,6 +44,16 @@
       "Expert"
     ]
   },
+  "availabilityBadge": {
+    "openForProjects": "Open for projects",
+    "openForProjectsStarting": "Open for projects starting {{month}} {{year}}",
+    "consultationOnly": "Consultation only until the end of {{month}} {{year}}",
+    "tooltips": {
+      "openForProjects": "I am currently available for new projects and consultations.",
+      "openForProjectsStarting": "I will be available for new projects again starting {{month}} {{year}}. Consultations are possible at any time.",
+      "consultationOnly": "Unfortunately, I am unable to take on new projects until the end of {{month}} {{year}}. However, consultations are possible at any time."
+    }
+  },
   "home": {
     "introduction": {
       "title": "Let me introduce myself",
